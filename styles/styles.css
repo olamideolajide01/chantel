@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+body {
+  /* font-family: "Yeseva One", serif; */
+  background-color: #101010;
+
+  color: #fff;
+  font-size: 18px;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+
+.l-width {
+  max-width: 90vw;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px;
+  transition: all 0.4s ease;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.opacity {
+  opacity: 0.3;
+}
+
+nav.sticky {
+  position: fixed;
+  padding: 7px 20px;
+  background-color: #e9a508;
+}
+nav .nav-content {
+  height: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+}
+nav.sticky .logo a {
+  color: #fff;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links li {
+  cursor: pointer;
+  font-weight: black;
+  list-style: none;
+  margin: 0 10px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #e9a508;
+  text-decoration: underline #e9a508;
+  text-underline-offset: 10px;
+}
+nav.sticky .nav-links li a {
+  color: #fff;
+  transition: all 0.4s ease;
+}
+nav.sticky .nav-links li a:hover {
+  color: #0e2431;
+  text-decoration: underline #0e2431;
+  text-underline-offset: 10px;
+}
+
+.text {
+  text-align: justify;
+  padding: 40px 80px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
