@@ -102,7 +102,7 @@ nav.sticky div span:hover {
   text-underline-offset: 10px;
 }
 nav.sticky div a:hover {
-  color: #0e2431;
+  color: #fff;
   text-decoration: underline #0e2431;
   text-underline-offset: 10px;
 }
