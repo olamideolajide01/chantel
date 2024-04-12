@@ -15,7 +15,7 @@ document.getElementById("openNav").addEventListener("click", showNav);
 document.getElementById("closeNav").addEventListener("click", closeNav);
 
 function showNav() {
-  drawer.style.display = "flex";
+  drawer.style.display = "block";
 }
 function closeNav() {
   drawer.style.display = "none";

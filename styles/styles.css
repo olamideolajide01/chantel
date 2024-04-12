@@ -48,6 +48,8 @@ nav {
 }
 
 nav.sticky {
+  top: 0;
+  left: 0;
   position: fixed;
   padding: 7px 20px;
   background-color: #e9a508;
@@ -71,10 +73,7 @@ nav.sticky .logo a {
 .nav-links {
   display: flex;
 }
-.nav-links li {
-  cursor: pointer;
-  font-weight: black;
-  list-style: none;
+.nav-links div {
   margin: 0 10px;
 }
 .nav-links li a {
@@ -85,16 +84,24 @@ nav.sticky .logo a {
   padding: 10px 4px;
   transition: all 0.3s ease;
 }
-.nav-links li a:hover {
+.nav-links div a:hover {
   color: #e9a508;
   text-decoration: underline #e9a508;
-  text-underline-offset: 10px;
+}
+.nav-links div span:hover {
+  color: #e9a508;
+  text-decoration: underline #e9a508;
 }
 nav.sticky .nav-links li a {
   color: #fff;
   transition: all 0.4s ease;
 }
-nav.sticky .nav-links li a:hover {
+nav.sticky div span:hover {
+  color: #0e2431;
+  text-decoration: underline #0e2431;
+  text-underline-offset: 10px;
+}
+nav.sticky div a:hover {
   color: #0e2431;
   text-decoration: underline #0e2431;
   text-underline-offset: 10px;
