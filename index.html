@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./public/images/favicon.png" />
 
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -34,16 +40,16 @@
           id="openNav"
           class="pt-5 pl-5 lg:hidden cursor-pointer fixed z-40 top-0"
         >
-          <img src="/public/icons/menu.svg" alt="" />
+          <img src="/public/icons/menu.svg" alt="menu" />
         </div>
 
         <!-- Mobile logo -->
-        <div class="mx-auto cursor-pointer lg:hidden flex justify-center">
+        <div class="mx-auto cursor-pointer lg:hidden py-2 flex justify-center">
           <a href="/index.html">
             <img
               src="/public/images/chantal-logo-footer.png"
-              class="w-[100px] h-[105px] object-cover"
-              alt=""
+              class="w-[100px] w-[70px] h-[70px] md:h-[105px] object-cover"
+              alt="logo"
           /></a>
         </div>
 
@@ -58,19 +64,21 @@
                 <source src="/public/videos/herovid.ogg" type="video/ogg" />
               </video>
 
-              <div class="absolute h-full top-14 lg:top-0 right-0 left-0">
+              <div class="absolute h-full top-4 lg:top-0 right-0 left-0">
                 <div class="flex flex-col justify-center items-center h-full">
                   <h1
-                    class="text-[30px] md:text-[40px] lg:text-[60px] 2xl:text-[100px] text-text font-semibold"
+                    class="text-[24px] md:text-[40px] lg:text-[60px] 2xl:text-[100px] text-text font-semibold animate__animated animate__fadeInUp delay animate__repeat animate__delay-2s"
                   >
                     Join our Mailing list
                   </h1>
                   <p
-                    class="text-center text-[12px] md:text-[16px] lg:text-[18px] 2xl:text-[24px] tracking-wider"
+                    class="text-center text-[12px] md:text-[16px] lg:text-[18px] 2xl:text-[24px] tracking-wider animate__animated animate__fadeInUp delay animate__repeat animate__delay-3s"
                   >
                     Jesus....... to the ends of the earth
                   </p>
-                  <div class="text-center mt-5 md:mt-10">
+                  <div
+                    class="text-center mt-3 md:mt-10 animate__animated animate__fadeInUp delay animate__repeat animate__delay-4s"
+                  >
                     <a
                       target="_blank"
                       href="https://launcher.nucleus.church/flow/4af1b576968a81b55ab7?nucleuslauncher=openflow&amp;nlflow=4af1b576968a81b55ab7"
@@ -113,32 +121,46 @@
                       <div
                         class="rounded-md bg-secondary py-3 text-white text-start"
                       >
-                        <a href="/vision.html" @click="closeNav()"
-                          ><p class="hover:bg-black p-2 text-sm">Mission</p></a
+                        <div
+                          @click="closeNav()"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                        <a href="/prayer_request.html" @click="closeNav()"
-                          ><p class="hover:bg-black p-2 text-sm">
-                            Prayer Request
-                          </p></a
+                          <a href="/vision.html"> Mission </a>
+                        </div>
+
+                        <div
+                          @click="closeNav()"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                        <a href="/meet_chantel.html" @click="closeNav()"
-                          ><p class="hover:bg-black p-2 text-sm">
-                            Meet Chantal
-                          </p></a
+                          <a href="/prayer_request.html"> Prayer Request </a>
+                        </div>
+
+                        <div
+                          @click="closeNav()"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                        <a href="/beliefs.html" @click="closeNav()">
-                          <p class="hover:bg-black p-2 text-sm">
-                            Our Beliefs
-                          </p></a
+                          <a href="/meet_chantal.html"> Meet Chantal </a>
+                        </div>
+
+                        <div
+                          @click="closeNav()"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                        <a href="/minister_furnace.html" @click="closeNav()"
-                          ><p class="hover:bg-black p-2 text-sm">
+                          <a href="/beliefs.html"> Our Beliefs </a>
+                        </div>
+
+                        <div
+                          @click="closeNav()"
+                          class="hover:bg-black rounded p-2 text-sm"
+                        >
+                          <a href="/minister_furnace.html">
                             Minister Furnace
-                          </p></a
-                        >
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!--  -->
                   <div
                     class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center gap-2 text-base rounded-lg;"
                   >
@@ -150,27 +172,36 @@
                       <div
                         class="rounded-md bg-secondary py-3 text-white text-start"
                       >
-                        <a
+                        <div
                           @click="closeNav()"
-                          target="_blank"
-                          href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                          <p class="hover:bg-black p-2 text-sm">
-                            Submit Testimony
-                          </p></a
-                        >
-                        <a
+                          <a
+                            target="_blank"
+                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
+                          >
+                            Submit Testimony</a
+                          >
+                        </div>
+
+                        <div
                           @click="closeNav()"
-                          target="_blank"
-                          href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                          <p class="hover:bg-black p-2 text-sm">
-                            Schedule Appointment
-                          </p></a
+                          <a
+                            target="_blank"
+                            href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
+                          >
+                            Schedule Appointment</a
+                          >
+                        </div>
+
+                        <div
+                          @click="closeNav()"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                        <a @click="closeNav()" href="/give.html"
-                          ><p class="hover:bg-black p-2 text-sm">Give</p></a
-                        >
+                          <a href="/give.html"> Give</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -185,20 +216,24 @@
                       <div
                         class="rounded-md bg-secondary py-3 text-white text-start"
                       >
-                        <a @click="closeNav()" href="/fasting.html"
-                          ><p class="hover:bg-black p-2 text-sm">Fasting</p></a
+                        <div
+                          @click="closeNav()"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                        <a @click="closeNav()" href="/conferences.html"
-                          ><p class="hover:bg-black p-2 text-sm">
-                            Conferences
-                          </p></a
+                          <a href="/fasting.html"> Fasting</a>
+                        </div>
+                        <div
+                          @click="closeNav()"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
+                          <a href="/conferences.html"> Conferences</a>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="text-base">
-                    <a @click="closeNav()" href="/mentor.html">Mentorship</a>
+                  <div @click="closeNav()" class="text-base">
+                    <a href="/mentor.html">Mentorship</a>
                   </div>
 
                   <div
@@ -212,31 +247,35 @@
                       <div
                         class="rounded-md bg-secondary text-white text-start py-3"
                       >
-                        <a
+                        <div
                           @click="closeNav()"
-                          target="_blank"
-                          href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                          <p class="hover:bg-black p-2 text-sm">
-                            Powerful Prophetics
-                          </p></a
-                        >
+                          <a
+                            target="_blank"
+                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                          >
+                            Powerful Prophetics</a
+                          >
+                        </div>
 
-                        <a
+                        <div
                           @click="closeNav()"
-                          target="_blank"
-                          href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                          <p class="hover:bg-black p-2 text-sm">
-                            Past Live Streams
-                          </p></a
+                          <a
+                            target="_blank"
+                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                          >
+                            Past Live Streams</a
+                          >
+                        </div>
+                        <div
+                          @click="closeNav()"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-
-                        <a @click="closeNav()" href="/index.html"
-                          ><p class="hover:bg-black p-2 text-sm">
-                            Video Testimonies
-                          </p></a
-                        >
+                          <a href="/index.html"> Video Testimonies</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -252,41 +291,50 @@
                       <div
                         class="rounded-md bg-secondary text-white text-start py-3"
                       >
-                        <a
+                        <div
                           @click="closeNav()"
-                          target="_blank"
-                          href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                          <p class="hover:bg-black p-2 text-sm">Volunteer</p></a
-                        >
-                        <a
+                          <a
+                            target="_blank"
+                            href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
+                          >
+                            Volunteer</a
+                          >
+                        </div>
+
+                        <div
                           @click="closeNav()"
-                          target="_blank"
-                          href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                          <p class="hover:bg-black p-2 text-sm">
-                            Small Groups
-                          </p></a
-                        >
-                        <a
+                          <a
+                            target="_blank"
+                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
+                          >
+                            Small Groups></a
+                          >
+                        </div>
+
+                        <div
                           @click="closeNav()"
-                          target="_blank"
-                          href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
+                          class="hover:bg-black rounded p-2 text-sm"
                         >
-                          <p class="hover:bg-black p-2 text-sm">
-                            Parner With Us
-                          </p></a
-                        >
+                          <a
+                            target="_blank"
+                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
+                          >
+                            Parner With Us</a
+                          >
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="text-base">
-                    <a @click="closeNav()" href="/blog.html">Blog</a>
+                    <a href="/blog.html">Blog</a>
                   </div>
                   <div class="text-base">
                     <a
-                      @click="closeNav()"
                       target="_blank"
                       href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&amp;nlflow=4b1f80dfeb60f8bff179"
                       >Contact us</a
@@ -299,101 +347,98 @@
 
             <!-- Appbar section -->
             <div class="z-40 h-full top-0 w-full hidden lg:flex">
-              <nav class="">
+              <nav>
                 <div class="nav-content">
-                  <ul class="nav-links">
+                  <div class="nav-links">
                     <div
                       class="relative h-full group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex-row items-center justify-center gap-2 text-base rounded-lg;"
                     >
                       <span> I'm New </span>
                       <div
-                        class="absolute shadow-lg top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg border border-transparent border-accent gap-2"
+                        class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max bg-transparent rounded-lg border border-transparent border-accent gap-2"
                       >
                         <div
                           class="rounded-md bg-secondary py-3 text-white text-start"
                         >
-                          <a href="/vision.html"
-                            ><p class="hover:bg-black p-2 text-sm">
-                              Mission
-                            </p></a
-                          >
-                          <a href="/prayer_request.html"
-                            ><p class="hover:bg-black p-2 text-sm">
-                              Prayer Request
-                            </p></a
-                          >
-                          <a href="/meet_chantel.html"
-                            ><p class="hover:bg-black p-2 text-sm">
-                              Meet Chantal
-                            </p></a
-                          >
-                          <a href="/beliefs.html">
-                            <p class="hover:bg-black p-2 text-sm">
-                              Our Beliefs
-                            </p></a
-                          >
-                          <a href="/minister_furnace.html"
-                            ><p class="hover:bg-black p-2 text-sm">
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a href="/vision.html"> Mission </a>
+                          </div>
+
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a href="/prayer_request.html"> Prayer Request </a>
+                          </div>
+
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a href="/meet_chantal.html"> Meet Chantal </a>
+                          </div>
+
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a href="/beliefs.html"> Our Beliefs </a>
+                          </div>
+
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a href="/minister_furnace.html">
                               Minister Furnace
-                            </p></a
-                          >
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <!--  -->
                     <div
                       class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center gap-2 text-base rounded-lg;"
                     >
                       <span> Next Steps</span>
 
                       <div
-                        class="absolute shadow-lg top-[24px] w-[220px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                        class="absolute shadow-lg z-50 top-[24px] w-[220px] left-0 h-max bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
                       >
                         <div
                           class="rounded-md bg-secondary py-3 text-white text-start"
                         >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
-                          >
-                            <p class="hover:bg-black p-2 text-sm">
-                              Submit Testimony
-                            </p></a
-                          >
-                          <a
-                            target="_blank"
-                            href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
-                          >
-                            <p class="hover:bg-black p-2 text-sm">
-                              Schedule Appointment
-                            </p></a
-                          >
-                          <a href="/give.html"
-                            ><p class="hover:bg-black p-2 text-sm">Give</p></a
-                          >
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
+                            >
+                              Submit Testimony</a
+                            >
+                          </div>
+
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a
+                              target="_blank"
+                              href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
+                            >
+                              Schedule Appointment</a
+                            >
+                          </div>
+
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a href="/give.html"> Give</a>
+                          </div>
                         </div>
                       </div>
                     </div>
+
+                    <!--  -->
                     <div
                       class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg"
                     >
                       <span> Event </span>
 
                       <div
-                        class="absolute shadow-lg top-[24px] w-[150px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                        class="absolute shadow-lg z-50 top-[24px] w-[150px] left-0 h-max bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
                       >
                         <div
                           class="rounded-md bg-secondary py-3 text-white text-start"
                         >
-                          <a href="/fasting.html"
-                            ><p class="hover:bg-black p-2 text-sm">
-                              Fasting
-                            </p></a
-                          >
-                          <a href="/conferences.html"
-                            ><p class="hover:bg-black p-2 text-sm">
-                              Conferences
-                            </p></a
-                          >
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a href="/fasting.html"> Fasting</a>
+                          </div>
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a href="/conferences.html"> Conferences</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -401,50 +446,50 @@
                     <div class="text-base">
                       <a href="/mentor.html">Mentorship</a>
                     </div>
-                  </ul>
+                  </div>
                   <div class="mx-auto cursor-pointer">
                     <a href="/index.html">
                       <img
                         src="/public/images/chantal-logo-footer.png"
                         class="w-[100px] h-[105px] object-cover"
-                        alt=""
+                        alt="home logo"
                     /></a>
                   </div>
-                  <ul class="nav-links">
+                  <div class="nav-links">
+                    <!--  -->
                     <div
                       class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
                     >
                       <span> Watch </span>
 
                       <div
-                        class="absolute shadow-lg top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                        class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
                       >
                         <div
                           class="rounded-md bg-secondary text-white text-start py-3"
                         >
-                          <a
-                            target="_blank"
-                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
-                          >
-                            <p class="hover:bg-black p-2 text-sm">
-                              Powerful Prophetics
-                            </p></a
-                          >
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a
+                              target="_blank"
+                              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                            >
+                              Powerful Prophetics</a
+                            >
+                          </div>
 
-                          <a
-                            target="_blank"
-                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
-                          >
-                            <p class="hover:bg-black p-2 text-sm">
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a
+                              target="_blank"
+                              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                            >
                               Past Live Streams
-                            </p></a
+                            </a>
+                          </div>
+                          <div
+                            class="hover:bg-black rounded rounded p-2 text-sm"
                           >
-
-                          <a href="/index.html"
-                            ><p class="hover:bg-black p-2 text-sm">
-                              Video Testimonies
-                            </p></a
-                          >
+                            <a href="/index.html"> Video Testimonies</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -455,35 +500,37 @@
                       <span> Engage </span>
 
                       <div
-                        class="absolute shadow-lg top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                        class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
                       >
                         <div
                           class="rounded-md bg-secondary text-white text-start py-3"
                         >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
-                          >
-                            <p class="hover:bg-black p-2 text-sm">
-                              Volunteer
-                            </p></a
-                          >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
-                          >
-                            <p class="hover:bg-black p-2 text-sm">
-                              Small Groups
-                            </p></a
-                          >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
-                          >
-                            <p class="hover:bg-black p-2 text-sm">
-                              Parner With Us
-                            </p></a
-                          >
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
+                            >
+                              Volunteer</a
+                            >
+                          </div>
+
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
+                            >
+                              Small Groups</a
+                            >
+                          </div>
+
+                          <div class="hover:bg-black rounded p-2 text-sm">
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
+                            >
+                              Parner With Us</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -498,7 +545,7 @@
                         >Contact us</a
                       >
                     </div>
-                  </ul>
+                  </div>
                 </div>
               </nav>
             </div>
@@ -518,11 +565,11 @@
             <div class="mx-auto max-w-2xl">
               <h2 class="leading-7 text-secondary">Welcome</h2>
               <p
-                class="mt-2 text-3xl font-bold tracking-tight text-text lg:text-7xl"
+                class="mt-2 text-3xl font-bold tracking-tight text-text lg:text-5xl"
               >
                 You Matter To God. You Matter to Us
               </p>
-              <p class="mt-6 text-lg leading-8">
+              <p class="mt-6 text-sm md:text-base leading-9">
                 We are called to eat, drink, speak, think and work to the glory
                 of God. We worship God by remembering the gospel through
                 preaching, teaching, singing, praying and celebrating baptism
@@ -536,7 +583,7 @@
           >
             <a href="/prayer_request.html">
               <div
-                class="rounded-lg hover:opacity-50 h-[200px] w-full"
+                class="rounded-lg hover:text-black hover:bg-secondary h-[200px] w-full"
                 style="
                   background: url(/public/images/prayer.png);
                   background-position: center;
@@ -555,7 +602,7 @@
               href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
             >
               <div
-                class="rounded-lg hover:opacity-50 h-[200px] w-full"
+                class="rounded-lg hover:text-black hover:bg-secondary h-[200px] w-full"
                 style="
                   background: url(/public/images/volunteer.jpg);
                   background-position: center;
@@ -573,7 +620,7 @@
               target="_blank"
               href="https://launcher.nucleus.church/flow/4e6b81f5136f0513f8af?nucleuslauncher=openflow&amp;nlflow=4e6b81f5136f0513f8af"
               ><div
-                class="rounded-lg hover:opacity-50 h-[200px] w-full"
+                class="rounded-lg hover:text-black hover:bg-secondary h-[200px] w-full"
                 style="
                   background: url(/public/images/engage.jpg);
                   background-position: center;
@@ -590,7 +637,7 @@
 
             <a href="/minister_furnace.html">
               <div
-                class="rounded-lg hover:opacity-50 h-[200px] w-full"
+                class="rounded-lg hover:text-black hover:bg-secondary h-[200px] w-full"
                 style="
                   background: url(/public/images/outreach.png);
                   background-position: center;
@@ -614,16 +661,16 @@
           class="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto items-center"
         >
           <div>
-            <img src="/public/images/join.jpeg" alt="" />
+            <img src="/public/images/join.jpeg" alt="connected" />
           </div>
           <div class="space-y-5">
             <p class="text-secondary">Get Connected</p>
             <h2
-              class="my-3 text-3xl font-bold tracking-tight text-text lg:text-7xl"
+              class="my-3 text-3xl font-bold tracking-tight text-text lg:text-5xl 2xl:7xl"
             >
               Uniting in Faith, Growing as Family.
             </h2>
-            <p class="leading-7">
+            <p class="text-sm md:text-base leading-9">
               Through shared beliefs and values, individuals find unity within
               the embrace of a church community. Together, they nurture bonds of
               kinship, offering support, love, and understanding. In the
@@ -633,16 +680,16 @@
             </p>
 
             <div>
-              <a
-                target="_blank"
-                href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
+              <button
+                class="bg-secondary px-5 py-3 text-sm py-1 text-white hover:bg-white hover:text-secondary capitalize rounded"
               >
-                <button
-                  class="bg-secondary px-5 py-3 text-sm py-1 text-white hover:bg-white hover:text-secondary capitalize rounded"
+                <a
+                  target="_blank"
+                  href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
                 >
-                  click here
-                </button></a
-              >
+                  click here</a
+                >
+              </button>
             </div>
           </div>
         </section>
@@ -658,7 +705,7 @@
               >
                 Donate To Support Our Ministry
               </h3>
-              <p class="py-3">
+              <p class="py-3 text-sm md:text-base leading-9">
                 Sow, plant, spread seeds, donate, Tithe. Shop the ministry
                 merchandise . Your purchase and donations assists us with
                 funding our conferences, relief / outreach and ministry
@@ -701,7 +748,7 @@
                 <!-- Card Image -->
                 <img
                   src="/public/images/Blog1.png"
-                  alt=""
+                  alt="blog1"
                   class="overflow-hidden"
                 />
                 <!-- Card Content -->
@@ -730,7 +777,7 @@
                 <!-- Card Image -->
                 <img
                   src="/public/images/Blog2.png"
-                  alt=""
+                  alt="blog2"
                   class="overflow-hidden"
                 />
                 <!-- Card Content -->
@@ -760,7 +807,7 @@
                 <!-- Card Image -->
                 <img
                   src="/public/images/Blog3.png"
-                  alt=""
+                  alt="blog3"
                   class="overflow-hidden"
                 />
                 <!-- Card Content -->
@@ -784,13 +831,11 @@
             </div>
 
             <div class="m-10 mx-auto text-center">
-              <a href="/blog.html">
-                <button
-                  class="px-5 py-2 border border-secondary text-xs md:text-sm hover:text-secondary rounded"
-                >
-                  view more
-                </button></a
+              <button
+                class="px-5 py-2 border border-secondary text-xs md:text-sm hover:text-secondary rounded"
               >
+                <a href="/blog.html"> view more</a>
+              </button>
             </div>
           </div>
         </div>
@@ -807,7 +852,7 @@
             <img
               src="/public/images/chantal-logo-footer.png"
               class="w-[100px] h-[105px] object-cover"
-              alt=""
+              alt="logo"
             />
           </div>
           <div>
@@ -892,11 +937,11 @@
           </div>
           <div>
             <a
-              href="/meet_chantel.html"
+              href="/meet_chantal.html"
               class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Meet Chantel</a
+              <span></span>Meet chantal</a
             >
           </div>
           <div>
@@ -919,7 +964,7 @@
           </div>
           <div>
             <a
-              href="/meet_chantel.html"
+              href="/meet_chantal.html"
               class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
@@ -969,7 +1014,7 @@
           </div>
           <div>
             <a
-              href="/minister_furnace.html"
+              href="/mentor.html"
               class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
@@ -1053,7 +1098,7 @@
           </div>
           <div>
             <a
-              target=""
+              target="_blank"
               href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
               class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
             >
@@ -1081,7 +1126,6 @@
       </p>
     </footer>
     <!-- end of footer -->
+    <script src="/js/script.js"></script>
   </body>
-
-  <script src="/js/script.js"></script>
 </html>
