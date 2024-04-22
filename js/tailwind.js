@@ -7,6 +7,7 @@ tailwind.config = {
         white: "#fff",
         accent: "#555",
         text: "#ccc",
+        bg: "#1f1f1f",
       },
       screens: {
         sm: "640px",

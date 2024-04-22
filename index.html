@@ -57,22 +57,24 @@
           <!-- header -->
           <div class="relative">
             <div
-              class="min-h-full w-full isolate overflow-hidden bg-black relative"
+              class="min-h-full w-full isolate overflow-hidden bg-black relative border-b-8 border-white"
             >
-              <video class="h-full w-full relative opacity" autoplay muted loop>
+              <video class="h-full w-full relative" autoplay muted loop>
                 <source src="/public/videos/herovid.mp4" type="video/mp4" />
                 <source src="/public/videos/herovid.ogg" type="video/ogg" />
               </video>
 
-              <div class="absolute h-full top-4 lg:top-0 right-0 left-0">
+              <div
+                class="absolute h-full bg-black bg-opacity-50 top-0 lg:top-0 right-0 left-0"
+              >
                 <div class="flex flex-col justify-center items-center h-full">
                   <h1
-                    class="text-[24px] md:text-[40px] lg:text-[60px] 2xl:text-[100px] text-text font-semibold animate__animated animate__fadeInUp delay animate__repeat animate__delay-2s"
+                    class="text-[24px] md:text-[40px] lg:text-[60px] 2xl:text-[100px] text-white font-semibold animate__animated animate__fadeInUp delay animate__repeat animate__delay-2s"
                   >
                     Join our Mailing list
                   </h1>
                   <p
-                    class="text-center text-[12px] md:text-[16px] lg:text-[18px] 2xl:text-[24px] tracking-wider animate__animated animate__fadeInUp delay animate__repeat animate__delay-3s"
+                    class="text-center text-[12px] md:text-[16px] lg:text-[18px] 2xl:text-[24px] text-white tracking-wider animate__animated animate__fadeInUp delay animate__repeat animate__delay-3s"
                   >
                     Jesus....... to the ends of the earth
                   </p>
@@ -581,9 +583,43 @@
           <div
             class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 max-w-full"
           >
+            <a href="#">
+              <div
+                class="rounded-lg h-[200px] w-full"
+                style="
+                  background: url(/public/images/podcast.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                "
+              >
+                <p
+                  class="capitalize rounded-lg py-4 hover:text-secondary bg-black bg-opacity-40 flex items-end justify-center text-2xl font-bold"
+                >
+                  Podcasts
+                </p>
+              </div></a
+            >
+
+            <a href="/give.html">
+              <div
+                class="rounded-lg h-[200px] w-full"
+                style="
+                  background: url(/public/images/outreach.png);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                "
+              >
+                <p
+                  class="capitalize flex items-center rounded-lg py-4 hover:text-secondary bg-black bg-opacity-40 justify-center text-2xl font-bold"
+                >
+                  Give
+                </p>
+              </div></a
+            >
+
             <a href="/prayer_request.html">
               <div
-                class="rounded-lg hover:text-black hover:bg-secondary h-[200px] w-full"
+                class="rounded-lg h-[200px] w-full"
                 style="
                   background: url(/public/images/prayer.png);
                   background-position: center;
@@ -591,7 +627,7 @@
                 "
               >
                 <p
-                  class="capitalize h-full flex items-center justify-center text-2xl font-bold"
+                  class="capitalize rounded-lg py-4 hover:text-secondary flex items-end bg-black bg-opacity-40 justify-center text-2xl font-bold"
                 >
                   Prayer Hub
                 </p>
@@ -602,7 +638,7 @@
               href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
             >
               <div
-                class="rounded-lg hover:text-black hover:bg-secondary h-[200px] w-full"
+                class="rounded-lg h-[200px] w-full"
                 style="
                   background: url(/public/images/volunteer.jpg);
                   background-position: center;
@@ -610,7 +646,7 @@
                 "
               >
                 <p
-                  class="capitalize h-full flex items-center justify-center text-2xl font-bold"
+                  class="capitalize rounded-lg py-4 bg-black bg-opacity-40 flex items-center hover:text-secondary justify-center text-2xl font-bold"
                 >
                   community
                 </p>
@@ -620,7 +656,7 @@
               target="_blank"
               href="https://launcher.nucleus.church/flow/4e6b81f5136f0513f8af?nucleuslauncher=openflow&amp;nlflow=4e6b81f5136f0513f8af"
               ><div
-                class="rounded-lg hover:text-black hover:bg-secondary h-[200px] w-full"
+                class="rounded-lg h-[200px] w-full"
                 style="
                   background: url(/public/images/engage.jpg);
                   background-position: center;
@@ -628,7 +664,7 @@
                 "
               >
                 <p
-                  class="capitalize h-full flex items-center justify-center text-2xl font-bold"
+                  class="capitalize rounded-lg py-4 bg-black bg-opacity-40 flex items-center hover:text-secondary justify-center text-2xl font-bold"
                 >
                   volunteer
                 </p>
@@ -637,7 +673,7 @@
 
             <a href="/minister_furnace.html">
               <div
-                class="rounded-lg hover:text-black hover:bg-secondary h-[200px] w-full"
+                class="rounded-lg h-[200px] w-full"
                 style="
                   background: url(/public/images/outreach.png);
                   background-position: center;
@@ -645,7 +681,7 @@
                 "
               >
                 <p
-                  class="capitalize h-full flex items-center justify-center text-2xl font-bold"
+                  class="capitalize rounded-lg py-4 bg-black bg-opacity-40 flex items-center hover:text-secondary justify-center text-2xl font-bold"
                 >
                   minister furnace
                 </p>
@@ -755,7 +791,7 @@
                 >
                   <!-- Card Content -->
                   <div class="p-4">
-                    <h3 class="font-bold text-white text-lg my-2 ">
+                    <h3 class="font-bold text-white text-lg my-2">
                       How to walk with God
                     </h3>
                     <p class="text-white text-sm">
@@ -856,7 +892,7 @@
     </main>
 
     <!-- footer section -->
-    <footer class="pt-10 md:pt-20 px-5 sm:px-20 border-t border-accent">
+    <footer class="pt-10 md:pt-20 px-5 sm:px-20 border-t border-accent bg-bg">
       <section
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-center py-5 md:py-10 gap-10"
       >
