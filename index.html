@@ -38,7 +38,7 @@
         <!-- Menu icon -->
         <div
           id="openNav"
-          class="pt-5 pl-5 lg:hidden cursor-pointer fixed z-40 top-0"
+          class="pt-5 pl-5 lg:hidden cursor-pointer absolute z-40 top-0"
         >
           <img src="/public/icons/menu.svg" alt="menu" />
         </div>
@@ -100,7 +100,7 @@
 
             <section
               id="navDrawer"
-              class="md:hidden flex flex-col bg-primary fixed top-0 z-50 w-[250px] rounded-b pt-5 pb-10 h-full shadow"
+              class="md:hidden flex flex-col bg-primary fixed top-0 bottom-0 z-50 w-[250px] rounded-b pt-5 pb-10 h-full shadow"
             >
               <div class="flex justify-end">
                 <div
@@ -348,12 +348,12 @@
             <!-- End of Mobile Navigation -->
 
             <!-- Appbar section -->
-            <div class="z-40 h-full top-0 w-full hidden lg:flex">
-              <nav>
-                <div class="nav-content">
-                  <div class="nav-links">
+            <div class="z-50 h-full w-full hidden lg:flex">
+              <nav class="z-50">
+                <div class="nav-content z-50">
+                  <div class="nav-links z-50">
                     <div
-                      class="relative h-full group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex-row items-center justify-center gap-2 text-base rounded-lg;"
+                      class="relative h-full group z-50 transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex-row items-center justify-center gap-2 text-base rounded-lg;"
                     >
                       <span> I'm New </span>
                       <div
@@ -552,344 +552,509 @@
               </nav>
             </div>
             <!-- Appbar end -->
+            <main>
+              <!-- Donate -->
+              <section>
+                <div class="w-full h-[500px] bg-accent">
+                  <div class="l-width flex justify-center items-center h-full">
+                    <div class="text-center space-y-3">
+                      <h3
+                        class="text-center text-3xl md:text-4xl 2xl:text-6xl font-bold"
+                      >
+                        Donate To Support Our Ministry
+                      </h3>
+                      <p class="py-3 text-sm md:text-base leading-9">
+                        Sow, plant, spread seeds, donate, Tithe. Shop the
+                        ministry merchandise . Your purchase and donations
+                        assists us with funding our conferences, relief /
+                        outreach and ministry operating costs
+                      </p>
+                      <div>
+                        <a href="/give.html">
+                          <button
+                            class="py-3 px-6 border text-sm border-secondary hover:text-secondary font-medium rounded"
+                          >
+                            Give Now
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="py-24 sm:py-32 l-width">
+                <div class="">
+                  <!-- podcasts -->
+
+                  <div
+                    class="flex flex-col sm:flex-row items-center bg-accent h-full rounded-3xl"
+                  >
+                    <div class="w-full sm:w-1/2 relative">
+                      <img
+                        src="/public/images/podcast.png"
+                        class="sm:rounded-l-3xl sm:h-[300px]"
+                        alt=""
+                      />
+
+                      <div
+                        class="text-center absolute font-medium top-10 left-10 text-3xl md:text-4xl"
+                      >
+                        Podcast
+                      </div>
+                      <div
+                        class="absolute bottom-6 sm:bottom-8 left-10 bg-accent text-secondary font-medium px-5 py-3 rounded-3xl"
+                      >
+                        <button>LISTEN</button>
+                      </div>
+                    </div>
+                    <div class="sm:w-1/2 h-full">
+                      <div class="text-center space-y-5 py-4 sm:py-0">
+                        <h2 class="text-3xl md:text-4xl lg:5xl font-medium">
+                          Support Our Ministry
+                        </h2>
+                        <p class="text-sm px-5 md:px-10">
+                          Sow, plant, spread seeds, donate, Tithe. Shop the
+                          ministry merchandise . Your purchase and donations
+                          assists us with funding our conferences, relief
+                          /outreach and ministry operating costs
+                        </p>
+                        <div
+                          class="bg-secondary inline-block text-primary mt-5 font-medium px-7 py-2.5 rounded-3xl"
+                        >
+                          <button>GIVE</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- prayer hub -->
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-10 max-w-full mt-10 md:mt-20"
+                  >
+                    <a
+                      target="_blank"
+                      href="https://launcher.nucleus.church/prayer/4c67ad350db94cc53036?nucleuslauncher=openprayerhub&nlprayerhub=4c67ad350db94cc53036"
+                    >
+                      <div
+                        id="cardd"
+                        class="relative hover:scale-105 transition ease-in-out"
+                      >
+                        <img
+                          src="public/images/prayer.png"
+                          class="min-h-[400px] z-10 rounded-3xl"
+                          alt=""
+                        />
+
+                        <div
+                          class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
+                        >
+                          Prayer hub
+                        </div>
+                        <div
+                          class="absolute bottom-4 text-center right-0 left-0 bg-accent w-full text-xs px-5 py-7 min-h-[100px]"
+                        >
+                          <span id="card1">
+                            Share your burdens to our Prayer wall or Prayer
+                            flow</span
+                          >
+                          <span id="card2" class="text-secondary hide"
+                            >Get Started</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- testimony -->
+                    <a
+                      target="_blank"
+                      href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
+                    >
+                      <div
+                        id="cardd2"
+                        class="relative hover:scale-105 transition ease-in-out"
+                      >
+                        <img
+                          src="public/images/testimonies.jpg"
+                          class="min-h-[400px] z-10 rounded-3xl"
+                          alt=""
+                        />
+
+                        <div
+                          class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
+                        >
+                          Testimonies
+                        </div>
+                        <div
+                          class="absolute bottom-4 text-center min-h-[100px] right-0 left-0 bg-accent w-full text-xs px-5 py-7"
+                        >
+                          <span id="card3" class="hover:hide">
+                            You are a witness, Share your story! Upload a video
+                            testimony</span
+                          >
+                          <span
+                            id="card4"
+                            class="text-secondary uppercase tracking-wide hide"
+                            >WRITE US!</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- ppp group -->
+                    <a
+                      target="_blank"
+                      href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&nlflow=47e0a0536ea78c712113"
+                    >
+                      <div
+                        id="cardd3"
+                        class="relative hover:scale-105 transition ease-in-out"
+                      >
+                        <img
+                          src="public/images/volunteer.jpg"
+                          class="min-h-[400px] z-10 rounded-3xl"
+                          alt=""
+                        />
+
+                        <div
+                          class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
+                        >
+                          PPP Groups
+                        </div>
+                        <div
+                          class="absolute bottom-4 text-center min-h-[100px] right-0 left-0 bg-accent w-full text-xs px-5 py-7"
+                        >
+                          <span id="card5">
+                            Join a small group, Join a prayer furnace! or a
+                            mentorship program</span
+                          >
+                          <span
+                            id="card6"
+                            class="text-secondary uppercase tracking-wide hide"
+                            >LEARN MORE!</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- outreach -->
+                    <a
+                      target="_blank"
+                      href="https://launcher.nucleus.church/flow/492db52fb492fdeaa3ca?nucleuslauncher=openflow&nlflow=492db52fb492fdeaa3ca"
+                    >
+                      <div
+                        id="cardd4"
+                        class="relative hover:scale-105 transition ease-in-out"
+                      >
+                        <img
+                          src="public/images/outreach.png"
+                          class="min-h-[400px] z-10 rounded-3xl"
+                          alt=""
+                        />
+
+                        <div
+                          class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
+                        >
+                          Relief and Outreach
+                        </div>
+                        <div
+                          class="absolute bottom-4 text-center min-h-[100px] right-0 left-0 bg-accent w-full text-xs px-5 py-7"
+                        >
+                          <p id="card7">we help people in need</p>
+                          <p
+                            id="card8"
+                            class="text-secondary uppercase tracking-wide hide"
+                          >
+                            GET IN TOUCH!
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- engage -->
+                    <a
+                      target="_blank"
+                      href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&nlinfocard=infocard_70dee5c1758048f385510f257b435993"
+                    >
+                      <div
+                        id="cardd5"
+                        class="relative hover:scale-105 transition ease-in-out"
+                      >
+                        <img
+                          src="public/images/engage.jpg"
+                          class="min-h-[400px] z-10 rounded-3xl"
+                          alt=""
+                        />
+
+                        <div
+                          class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
+                        >
+                          Engage
+                        </div>
+                        <div
+                          class="absolute bottom-4 text-center min-h-[100px] right-0 left-0 bg-accent w-full text-xs py-7 px-5"
+                        >
+                          <span id="card9">
+                            Partner with us or become a member of our team or
+                            Volunteer! Help us make adiffe rence!</span
+                          >
+                          <span
+                            id="card10"
+                            class="text-secondary uppercase tracking-wide hide"
+                            >SIGN UP!</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- contact -->
+                    <a
+                      target="_blank"
+                      href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&nlflow=4b1f80dfeb60f8bff179"
+                    >
+                      <div
+                        id="cardd6"
+                        class="relative hover:scale-105 transition ease-in-out"
+                      >
+                        <img
+                          src="public/images/contact.jpg"
+                          class="min-h-[400px] z-10 rounded-3xl"
+                          alt=""
+                        />
+
+                        <div
+                          class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
+                        >
+                          Contact Us
+                        </div>
+                        <div
+                          class="absolute bottom-4 text-center min-h-[100px] right-0 left-0 hover:hide bg-accent w-full text-xs py-7 px-5"
+                        >
+                          <span id="card11" class="">
+                            Send us a general inquiry, Join mailing list.</span
+                          >
+                          <span
+                            id="card12"
+                            class="text-secondary uppercase tracking-wide hide"
+                            >SIGN UP!</span
+                          >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </section>
+
+              <!-- about us -->
+              <section class="py-10 sm:py-10 l-width">
+                <section
+                  class="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto items-center"
+                >
+                  <div>
+                    <img src="/public/images/join.jpeg" alt="connected" />
+                  </div>
+                  <div class="space-y-5">
+                    <p class="text-secondary">Get Connected</p>
+                    <h2
+                      class="my-3 text-3xl font-bold tracking-tight text-text lg:text-5xl 2xl:7xl"
+                    >
+                      Uniting in Faith, Growing as Family.
+                    </h2>
+                    <p class="text-sm md:text-base leading-9">
+                      Through shared beliefs and values, individuals find unity
+                      within the embrace of a church community. Together, they
+                      nurture bonds of kinship, offering support, love, and
+                      understanding. In the sanctuary of faith, strangers become
+                      brothers and sisters, forging a resilient family
+                      strengthened by shared spirituality and common purpose.
+                    </p>
+
+                    <div>
+                      <button
+                        class="bg-secondary px-5 py-3 text-sm py-1 text-white hover:bg-white hover:text-secondary capitalize rounded"
+                      >
+                        <a
+                          target="_blank"
+                          href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
+                        >
+                          click here</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </section>
+              </section>
+
+              <section class="py-20 l-width">
+                <!-- podcasts -->
+
+                <div
+                  class="flex flex-col sm:flex-row items-center bg-accent h-full rounded-3xl"
+                >
+                  <div class="sm:w-1/2 relative">
+                    <img
+                      src="/public/images/calander.jpg"
+                      class="sm:rounded-l-3xl h-[300px]"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sm:w-1/2 h-full py-7 sm:py-0">
+                    <div class="text-center space-y-5">
+                      <h2 class="text-3xl md:text-4xl lg:5xl font-medium">
+                        Book Appointment
+                      </h2>
+                      <p class="text-sm px-5 md:px-10">
+                        Schedule time with Chantal Ekabe and team
+                      </p>
+
+                      <div
+                        class="bg-secondary inline-block text-primary font-medium px-7 py-2.5 rounded-3xl"
+                      >
+                        <a
+                          href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
+                          target="_blank"
+                        >
+                          <button>BOOK</button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- BLOG -->
+              <section>
+                <div
+                  class="flex flex-col justify-center overflow-hidden py-10 sm:py-20"
+                >
+                  <div class="l-width min-h-28">
+                    <div class="mx-auto py-4">
+                      <h3
+                        class="font-bold text-center text-3xl md:text-4xl 2xl:text-6xl"
+                      >
+                        Mini Guides
+                      </h3>
+                    </div>
+
+                    <!-- All Cards Container -->
+
+                    <div
+                      class="flex flex-col md:flex-row gap-5 items-center w-full"
+                    >
+                      <!-- Card 1 -->
+
+                      <a
+                        href="/blog2.html"
+                        class="text-secondary font-bold text-xs hover:underline underline-secondary w-full"
+                      >
+                        <div class="h-[350px] w-full md:my-12 relative">
+                          <img
+                            src="public/images/blog1.png"
+                            class="h-[350px] rounded-3xl"
+                            alt=""
+                          />
+
+                          <div
+                            class="bg-[#101010] bg-opacity-70 hover:bg-opacity-80 absolute rounded-t-3xl bottom-0 w-full z-10"
+                          >
+                            <!-- Card Content -->
+                            <div class="p-4">
+                              <h3 class="font-bold text-white text-lg my-2">
+                                How to walk with God
+                              </h3>
+                              <p class="text-white text-sm">
+                                Walking with God is a personal and spiritual
+                                journey that involves cultivating a close
+                                relationship through prayer...
+                              </p>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+
+                      <!-- Card 2 -->
+                      <a
+                        href="/blog2.html"
+                        class="text-secondary font-bold text-xs hover:underline underline-secondary w-full"
+                      >
+                        <div class="h-[350px] w-full md:my-12 relative">
+                          <img
+                            src="public/images/blog2.png"
+                            class="h-[350px] rounded-3xl"
+                            alt=""
+                          />
+
+                          <div
+                            class="bg-[#101010] bg-opacity-70 hover:bg-opacity-80 absolute rounded-t-3xl bottom-0 w-full z-10"
+                          >
+                            <!-- Card Content -->
+                            <div class="p-4">
+                              <h3 class="font-bold text-white text-lg my-2">
+                                The Tactics of the Enemy
+                              </h3>
+                              <p class="text-white text-sm">
+                                From the beginning of times, the enemy has
+                                looked for ways to destroy the most precious and
+                                valued creation of God, man...
+                              </p>
+                              <!-- <div class="mt-5">
+                             Read More
+                            </div> -->
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <!-- Card 3 -->
+                      <a
+                        href="/blog3.html"
+                        class="text-secondary font-bold text-xs hover:underline underline-secondary w-full"
+                      >
+                        <div class="h-[350px] w-full md:my-12 relative">
+                          <img
+                            src="public/images/blog3.png"
+                            class="h-[350px] rounded-3xl"
+                            alt=""
+                          />
+
+                          <div
+                            class="bg-[#101010] bg-opacity-70 hover:bg-opacity-80 absolute rounded-t-3xl bottom-0 w-full z-10"
+                          >
+                            <!-- Card Content -->
+                            <div class="p-4">
+                              <h3 class="font-bold text-white text-lg my-2">
+                                The Tactics of the Enemy II: Division
+                              </h3>
+                              <p class="text-white text-sm">
+                                One of the core messages in the New Testament to
+                                the church is the need for believers to
+                                prioritize unity and treat...
+                              </p>
+                              <!-- <div class="mt-5">
+                             Read More
+                            </div> -->
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="m-10 mx-auto text-center">
+                      <button
+                        class="px-5 py-2 border border-secondary text-xs md:text-sm hover:text-secondary rounded"
+                      >
+                        <a href="/blog.html"> View more</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
           </div>
         </div>
       </section>
     </header>
 
     <!-- Main section -->
-    <main class="">
-      <section class="py-24 sm:py-32 l-width">
-        <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mx-auto"
-        >
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl">
-              <h2 class="leading-7 text-secondary">Welcome</h2>
-              <p
-                class="my-4 text-3xl font-bold tracking-tight text-text lg:text-5xl"
-              >
-                You Matter To God. You Matter to Us
-              </p>
-              <p class="mt-6 text-sm md:text-base leading-9">
-                We are called to eat, drink, speak, think and work to the glory
-                of God. We worship God by remembering the gospel through
-                preaching, teaching, singing, praying and celebrating baptism
-                and communion.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 max-w-full"
-          >
-            <a href="#">
-              <div
-                class="rounded-lg h-[200px] w-full"
-                style="
-                  background: url(/public/images/podcast.png);
-                  background-position: center;
-                  background-repeat: no-repeat;
-                "
-              >
-                <p
-                  class="capitalize rounded-lg py-4 hover:text-secondary bg-black bg-opacity-60 flex items-end justify-center text-2xl font-bold"
-                >
-                  Podcasts
-                </p>
-              </div></a
-            >
-
-            <a href="/give.html">
-              <div
-                class="rounded-lg h-[200px] w-full"
-                style="
-                  background: url(/public/images/outreach.png);
-                  background-position: center;
-                  background-repeat: no-repeat;
-                "
-              >
-                <p
-                  class="capitalize flex items-center rounded-lg py-4 hover:text-secondary bg-black bg-opacity-60 justify-center text-2xl font-bold"
-                >
-                  Give
-                </p>
-              </div></a
-            >
-
-            <a href="/prayer_request.html">
-              <div
-                class="rounded-lg h-[200px] w-full"
-                style="
-                  background: url(/public/images/prayer.png);
-                  background-position: center;
-                  background-repeat: no-repeat;
-                "
-              >
-                <p
-                  class="capitalize rounded-lg py-4 hover:text-secondary flex items-end bg-black bg-opacity-60 justify-center text-2xl font-bold"
-                >
-                  Prayer Hub
-                </p>
-              </div></a
-            >
-            <a
-              target="_blank"
-              href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
-            >
-              <div
-                class="rounded-lg h-[200px] w-full"
-                style="
-                  background: url(/public/images/volunteer.jpg);
-                  background-position: center;
-                  background-repeat: no-repeat;
-                "
-              >
-                <p
-                  class="capitalize rounded-lg py-4 bg-black bg-opacity-60 flex items-center hover:text-secondary justify-center text-2xl font-bold"
-                >
-                  community
-                </p>
-              </div></a
-            >
-            <a
-              target="_blank"
-              href="https://launcher.nucleus.church/flow/4e6b81f5136f0513f8af?nucleuslauncher=openflow&amp;nlflow=4e6b81f5136f0513f8af"
-              ><div
-                class="rounded-lg h-[200px] w-full"
-                style="
-                  background: url(/public/images/engage.jpg);
-                  background-position: center;
-                  background-repeat: no-repeat;
-                "
-              >
-                <p
-                  class="capitalize rounded-lg py-4 bg-black bg-opacity-60 flex items-center hover:text-secondary justify-center text-2xl font-bold"
-                >
-                  volunteer
-                </p>
-              </div></a
-            >
-
-            <a href="/minister_furnace.html">
-              <div
-                class="rounded-lg h-[200px] w-full"
-                style="
-                  background: url(/public/images/outreach.png);
-                  background-position: center;
-                  background-repeat: no-repeat;
-                "
-              >
-                <p
-                  class="capitalize rounded-lg py-4 bg-black bg-opacity-60 flex items-center hover:text-secondary justify-center text-2xl font-bold"
-                >
-                  minister furnace
-                </p>
-              </div></a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- about us -->
-      <section class="py-24 sm:py-32 l-width">
-        <section
-          class="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto items-center"
-        >
-          <div>
-            <img src="/public/images/join.jpeg" alt="connected" />
-          </div>
-          <div class="space-y-5">
-            <p class="text-secondary">Get Connected</p>
-            <h2
-              class="my-3 text-3xl font-bold tracking-tight text-text lg:text-5xl 2xl:7xl"
-            >
-              Uniting in Faith, Growing as Family.
-            </h2>
-            <p class="text-sm md:text-base leading-9">
-              Through shared beliefs and values, individuals find unity within
-              the embrace of a church community. Together, they nurture bonds of
-              kinship, offering support, love, and understanding. In the
-              sanctuary of faith, strangers become brothers and sisters, forging
-              a resilient family strengthened by shared spirituality and common
-              purpose.
-            </p>
-
-            <div>
-              <button
-                class="bg-secondary px-5 py-3 text-sm py-1 text-white hover:bg-white hover:text-secondary capitalize rounded"
-              >
-                <a
-                  target="_blank"
-                  href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
-                >
-                  click here</a
-                >
-              </button>
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <!-- Donate -->
-      <section>
-        <div class="w-full h-[500px] bg-accent">
-          <div class="l-width flex justify-center items-center h-full">
-            <div class="text-center space-y-3">
-              <h3
-                class="text-center text-3xl md:text-4xl 2xl:text-6xl font-bold"
-              >
-                Donate To Support Our Ministry
-              </h3>
-              <p class="py-3 text-sm md:text-base leading-9">
-                Sow, plant, spread seeds, donate, Tithe. Shop the ministry
-                merchandise . Your purchase and donations assists us with
-                funding our conferences, relief / outreach and ministry
-                operating costs
-              </p>
-              <div>
-                <a href="/give.html">
-                  <button
-                    class="py-3 px-6 border text-sm border-secondary hover:text-secondary font-medium rounded"
-                  >
-                    Give Now
-                  </button></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- BLOG -->
-      <section>
-        <div
-          class="flex flex-col justify-center overflow-hidden py-10 sm:py-20"
-        >
-          <div class="l-width min-h-28">
-            <div class="mx-auto py-4">
-              <h3
-                class="font-bold text-center text-3xl md:text-4xl 2xl:text-6xl"
-              >
-                Mini Guides
-              </h3>
-            </div>
-
-            <!-- All Cards Container -->
-            <div class="flex flex-col md:flex-row gap-5 items-center w-full">
-              <!-- Card 1 -->
-              <div
-                class="shadow-md hover:shadow-lg h-[300px] w-full rounded-lg md:my-12"
-                style="
-                  background-image: url('/public/images/Blog1.png');
-                  background-position: center;
-                  background-repeat: no-repeat;
-                "
-              >
-                <div
-                  class="bg-[#1010106b] hover:bg-[#10101029] h-full flex items-end"
-                >
-                  <!-- Card Content -->
-                  <div class="p-4">
-                    <h3 class="font-bold text-white text-lg my-2">
-                      How to walk with God
-                    </h3>
-                    <p class="text-white text-sm">
-                      Walking with God is a personal and spiritual journey that
-                      involves cultivating a close relationship through
-                      prayer...
-                    </p>
-                    <div class="mt-5">
-                      <a
-                        href="/blog1.html"
-                        class="text-secondary font-bold text-xs hover:underline underline-secondary"
-                        >Read More</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div
-                class="shadow-md hover:shadow-lg h-[300px] w-full rounded-lg md:my-12"
-                style="
-                  background-image: url('/public/images/Blog2.png');
-                  background-position: center;
-                  background-repeat: no-repeat;
-                "
-              >
-                <div
-                  class="bg-[#1010106b] hover:bg-[#10101029] h-full flex items-end"
-                >
-                  <!-- Card Content -->
-                  <div class="p-4">
-                    <h3 class="font-bold text-white my-2 text-lg">
-                      The Tactics of the Enemy
-                    </h3>
-                    <p class="text-white text-sm">
-                      From the beginning of times, the enemy has looked for ways
-                      to destroy the most precious and valued creation of God,
-                      man...
-                    </p>
-                    <div class="mt-5">
-                      <a
-                        href="/blog2.html"
-                        class="text-secondary font-bold text-xs hover:underline underline-secondary"
-                        >Read More</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div
-                class="shadow-md hover:shadow-lg h-[300px] w-full rounded-lg md:my-12"
-                style="
-                  background-image: url('/public/images/Blog3.png');
-                  background-position: center;
-                  background-repeat: no-repeat;
-                "
-              >
-                <!-- Card Image -->
-
-                <!-- Card Content -->
-                <div
-                  class="h-full bg-[#1010106b] hover:bg-[#10101029] flex items-end"
-                >
-                  <div class="p-4">
-                    <h3 class="font-bold text-white my-2 text-lg">
-                      The Tactics of the Enemy II: Division
-                    </h3>
-                    <p class="text-white text-sm">
-                      One of the core messages in the New Testament to the
-                      church is the need for believers to prioritize unity and
-                      treat...
-                    </p>
-                    <div class="mt-5">
-                      <a
-                        href="/blog3.html"
-                        class="text-secondary font-bold text-xs hover:underline underline-secondary"
-                        >Read More</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="m-10 mx-auto text-center">
-              <button
-                class="px-5 py-2 border border-secondary text-xs md:text-sm hover:text-secondary rounded"
-              >
-                <a href="/blog.html"> View more</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
 
     <!-- footer section -->
     <footer class="pt-10 md:pt-20 px-5 sm:px-20 border-t border-accent bg-bg">
