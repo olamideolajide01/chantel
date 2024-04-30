@@ -7,18 +7,17 @@ window.onscroll = function () {
   }
 };
 
-const drawer = document.getElementById("navDrawer");
-drawer.style.display = "none";
+const list = document.querySelector("#navDrawer");
 
 // Event listener to call the function when the button is clicked
 document.getElementById("openNav").addEventListener("click", showNav);
 document.getElementById("closeNav").addEventListener("click", closeNav);
 
 function showNav() {
-  drawer.style.display = "block";
+  list.classList.remove("hide");
 }
 function closeNav() {
-  drawer.style.display = "none";
+  list.classList.add("hide");
 }
 
 const cardd = document.querySelector("#cardd");
@@ -123,4 +122,57 @@ cardd6.addEventListener("mouseleave", () => {
   // Change the button's background color back to its original color
   card11.classList.remove("hide");
   card12.classList.remove("notHide");
+});
+
+const blogg = document.querySelector("#blogg");
+const blogg1 = document.querySelector("#blogg1");
+const blogg2 = document.querySelector("#blogg2");
+
+const blog1 = document.querySelector("#blog1");
+const blog2 = document.querySelector("#blog2");
+const blog3 = document.querySelector("#blog3");
+const blog4 = document.querySelector("#blog4");
+const blog5 = document.querySelector("#blog5");
+const blog6 = document.querySelector("#blog6");
+
+// Add a mouseover event listener
+blogg.addEventListener("mouseover", () => {
+  // Change the button's background color
+  blog1.classList.add("hide");
+  blog2.classList.add("notHide");
+});
+
+// Add a mouseout event listener
+blogg.addEventListener("mouseleave", () => {
+  // Change the button's background color back to its original color
+  blog1.classList.remove("hide");
+  blog2.classList.remove("notHide");
+});
+
+// Add a mouseover event listener
+blogg2.addEventListener("mouseover", () => {
+  // Change the button's background color
+  blog3.classList.add("hide");
+  blog4.classList.add("notHide");
+});
+
+// Add a mouseout event listener
+blogg2.addEventListener("mouseleave", () => {
+  // Change the button's background color back to its original color
+  blog3.classList.remove("hide");
+  blog4.classList.remove("notHide");
+});
+
+// Add a mouseover event listener
+blogg3.addEventListener("mouseover", () => {
+  // Change the button's background color
+  blog5.classList.add("hide");
+  blog6.classList.add("notHide");
+});
+
+// Add a mouseout event listener
+blogg3.addEventListener("mouseleave", () => {
+  // Change the button's background color back to its original color
+  blog5.classList.remove("hide");
+  blog6.classList.remove("notHide");
 });

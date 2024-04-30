@@ -15,6 +15,11 @@
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- gogle fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,280 +55,260 @@
         <!-- header -->
         <div>
           <div class="relative">
-            <div
-              class="min-h-full w-full isolate overflow-hidden bg-black relative"
-            >
-              <img
-                src="/public/images/blog.jpg"
-                class="h-full sm:h-[400px] w-full relative object-cover opacity-30"
-              />
-
-              <div
-                class="absolute h-full top-4 mt-5 lg:mt-10 lg:top-0 right-0 left-0"
-              >
-                <div class="flex flex-col justify-center items-center h-full">
-                  <h2
-                    class="text-[30px] md:text-[48px] lg:text[60px] 2xl:text-[80px] capitalize text-text font-semibold"
-                  >
-                    Mentorship
-                  </h2>
-                </div>
-              </div>
-            </div>
             <!-- Mobile Navigation bar -->
-
-            <section
-              id="navDrawer"
-              class="md:hidden flex flex-col bg-primary fixed top-0 z-50 w-[250px] rounded-b pt-5 pb-10 h-full shadow"
-            >
-              <div class="flex justify-end">
-                <div
-                  id="closeNav"
-                  class="mr-5 bg-secondary text-white py-2 px-4 hover:bg-white hover:text-secondary rounded-full cursor-pointer"
-                >
-                  x
-                </div>
-              </div>
-
-              <div class="flex justify-center items-center h-full">
-                <div class="space-y-7">
+            <section id="navDrawer" class="hide">
+              <section
+                class="md:hidden flex flex-col bg-primary fixed top-0 z-50 w-[250px] rounded-b pt-5 pb-10 h-full shadow animate__animated animate__fadeInLeft"
+              >
+                <div class="flex justify-end">
                   <div
-                    class="relative h-full group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex-row items-center justify-center gap-2 text-base rounded-lg;"
+                    id="closeNav"
+                    class="mr-5 bg-secondary text-white py-2 px-4 hover:bg-white hover:text-secondary rounded-full cursor-pointer"
                   >
-                    <span> I'm New </span>
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg border border-transparent border-accent gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary py-3 text-white text-start"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/vision.html"> Mission </a>
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/prayer_request.html"> Prayer Request </a>
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/meet_chantal.html"> Meet Chantal </a>
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/beliefs.html"> Our Beliefs </a>
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/minister_furnace.html">
-                            Minister Furnace
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div
-                    class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center gap-2 text-base rounded-lg;"
-                  >
-                    <span> Next Steps</span>
-
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[220px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary py-3 text-white text-start"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
-                          >
-                            Submit Testimony</a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
-                          >
-                            Schedule Appointment</a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/give.html"> Give</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg"
-                  >
-                    <span> Event </span>
-
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[150px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary py-3 text-white text-start"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/fasting.html"> Fasting</a>
-                        </div>
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/conferences.html"> Conferences</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div @click="closeNav()" class="text-base">
-                    <a href="/mentor.html">Mentorship</a>
-                  </div>
-
-                  <div
-                    class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
-                  >
-                    <span> Watch </span>
-
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary text-white text-start py-3"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
-                          >
-                            Powerful Prophetics</a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
-                          >
-                            Past Live Streams</a
-                          >
-                        </div>
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/index.html"> Video Testimonies</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
-                  >
-                    <span> Engage </span>
-
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary text-white text-start py-3"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
-                          >
-                            Volunteer</a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
-                          >
-                            Small Groups></a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
-                          >
-                            Parner With Us</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="text-base">
-                    <a href="/blog.html">Mini Guides</a>
-                  </div>
-                  <div class="text-base">
-                    <a
-                      target="_blank"
-                      href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&amp;nlflow=4b1f80dfeb60f8bff179"
-                      >Contact us</a
-                    >
+                    x
                   </div>
                 </div>
-              </div>
+
+                <div class="flex justify-center items-center h-full">
+                  <div class="space-y-7">
+                    <div
+                      class="relative h-full group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex-row items-center justify-center gap-2 text-base rounded-lg;"
+                    >
+                      <span> I'm New </span>
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg border border-transparent border-accent gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary py-3 text-white text-start"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/vision.html"> Mission </a>
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/prayer_request.html"> Prayer Request </a>
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/meet_chantal.html"> Meet Chantal </a>
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/beliefs.html"> Our Beliefs </a>
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/minister_furnace.html">
+                              Minister Furnace
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div
+                      class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center gap-2 text-base rounded-lg;"
+                    >
+                      <span> Next Steps</span>
+
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[220px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary py-3 text-white text-start"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
+                            >
+                              Submit Testimony</a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
+                            >
+                              Schedule Appointment</a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/give.html"> Give</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg"
+                    >
+                      <span> Event </span>
+
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[150px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary py-3 text-white text-start"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/fasting.html"> Fasting</a>
+                          </div>
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/conferences.html"> Conferences</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div @click="closeNav()" class="text-base">
+                      <a href="/mentor.html">Mentorship</a>
+                    </div>
+
+                    <div
+                      class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
+                    >
+                      <span> Watch </span>
+
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary text-white text-start py-3"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                            >
+                              Powerful Prophetics</a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                            >
+                              Past Live Streams</a
+                            >
+                          </div>
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/index.html"> Video Testimonies</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
+                    >
+                      <span> Engage </span>
+
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary text-white text-start py-3"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
+                            >
+                              Volunteer</a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
+                            >
+                              Small Groups></a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
+                            >
+                              Parner With Us</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="text-base">
+                      <a href="/blog.html">Mini Guides</a>
+                    </div>
+                    <div class="text-base">
+                      <a
+                        target="_blank"
+                        href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&amp;nlflow=4b1f80dfeb60f8bff179"
+                        >Contact us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </section>
             </section>
             <!-- End of Mobile Navigation -->
 
             <!-- Appbar section -->
             <div class="z-40 h-full top-0 w-full hidden lg:flex">
-              <nav>
+              <nav class="bg-accent">
                 <div class="nav-content">
                   <div class="nav-links">
                     <div
@@ -532,10 +517,10 @@
     </header>
 
     <!-- Main section -->
-    <main class="py-10 md:py-20 px-5">
-      <div class="l-width">
+    <main class="py-10 md:py-40 md:pb-20 px-5 bg-white">
+      <div class="md:l-width">
         <div class="mx-5 md:mx-10">
-          <p class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+          <p class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
             The goal of mentorship is to help mentees become confident in
             Christ, passing our faith to others as God instructs us in Psalm
             78:1-8 and Ecclesiastes 4:9-10.
@@ -545,30 +530,30 @@
           </h2>
 
           <ul class="list-disc">
-            <li class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+            <li class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
               Is Eager To Know God In A Deeper Way
             </li>
-            <li class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+            <li class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
               Wants To Grow Spiritually
             </li>
-            <li class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+            <li class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
               Is Approachable About Any Topic Or Situation
             </li>
-            <li class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+            <li class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
               Is Willing To Be Vulnerable
             </li>
-            <li class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+            <li class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
               Is Open To Stepping Out Of Their Comfort Zone
             </li>
-            <li class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+            <li class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
               Desires To Learn More About Scripture
             </li>
-            <li class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+            <li class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
               Seeks To Apply God’s Word To Their Daily Life
             </li>
           </ul>
 
-          <p class="pt-5 leading-7 text-sm md:text-base 2xl:text-lg">
+          <p class="pt-5 text-accent text-sm md:text-base 2xl:text-lg">
             The mentor could be Prophet chantal Ekabe or someone assigned by her
             or a rotation. The mentors will discuss how God has been
             encouraging, convicting, challenging, and comforting them through
@@ -578,10 +563,10 @@
           </p>
 
           <div class="mt-5">
-            <h3 class="text-text text-xl md:text-2xl font-bold">
+            <h3 class="text-accent text-xl md:text-2xl font-bold">
               Why Aren't Mentorship Groups Larger Than 8 People?
             </h3>
-            <p class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+            <p class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
               By keeping the size of the group small, there are fewer schedules
               to coordinate between the members of the group, introverts are
               more likely to participate, and the smaller size of the group
@@ -590,11 +575,11 @@
           </div>
 
           <div class="mt-5">
-            <h3 class="text-text text-xl md:text-2xl font-bold">
+            <h3 class="text-accent text-xl md:text-2xl font-bold">
               What Do I Do If Someone Asks If They Can Join Mentorship But It Is
               Already Maxed Out At 8 People?
             </h3>
-            <p class="pt-3 leading-7 text-sm md:text-base 2xl:text-lg">
+            <p class="pt-3 text-accent text-sm md:text-base 2xl:text-lg">
               Please reach out to us through the contact us flow. The new person
               coming in may become a catalyst for the group to become two
               separate groups, and our mentorship seeks to create more Mentors
@@ -604,33 +589,33 @@
 
           <!--  -->
           <div class="mt-5">
-            <h3 class="text-text text-xl md:text-2xl font-bold">
+            <h3 class="text-accent text-xl md:text-2xl font-bold">
               What Is Growth Track?
             </h3>
-            <p class="pt-3 text-sm md:text-base 2xl:text-lg leading-7">
+            <p class="pt-3 text-sm md:text-base 2xl:text-lg text-accent">
               Growth Track is our pathway from New believers to spiritual
               formation, and maturing in our relationship with Jesus.
             </p>
-            <p class="pt-3text-sm md:text-base 2xl:text-lg leading-7">
+            <p class="pt-3 text-sm md:text-base 2xl:text-lg text-accent">
               Join discussions to help deepen your faith and equip you to follow
               Jesus in the world. Growth tracks happen periodically throughout
               the year in community and include teaching, discussion and
               application.
             </p>
-            <p class="pt-3 text-sm md:text-base 2xl:text-lg leading-7">
+            <p class="pt-3 text-sm md:text-base 2xl:text-lg text-accent">
               Growth Track will help you establish a foundation rooted in the
               story of scripture. We’ll look at topics like the meaning of life,
               identity, scripture, and what it means to follow Jesus in our
               world today. You'll gain a deeper understanding of the big themes
               in the story of Scripture and how we fit into it.
             </p>
-            <p class="pt-3 text-sm md:text-base 2xl:text-lg leading-7">
+            <p class="pt-3 text-sm md:text-base 2xl:text-lg text-accent">
               One of the best parts about growth track is that it will help you
               start to form relationships with people that you have never met
               before. As you attend Growth Track, we will do our best to connect
               you with a Rooted experience or an ongoing discipleship group.
             </p>
-            <p class="pt-3 text-sm md:text-base 2xl:text-lg leading-7">
+            <p class="pt-3 text-sm md:text-base 2xl:text-lg text-accent">
               Start-up mentorship teaching on all you need to know to start your
               walk with Christ! If you’re a new believer or need a refresher on
               the basics of faith, this class will be a great and encouraging
@@ -643,10 +628,10 @@
 
           <!--  -->
           <div class="mt-5">
-            <h3 class="text-text text-xl md:text-2xl font-bold">
+            <h3 class="text-accent text-xl md:text-2xl font-bold">
               What Happens When I Finish New Walk?
             </h3>
-            <p class="pt-3 text-sm md:text-base 2xl:text-lg leading-7">
+            <p class="pt-3 text-sm md:text-base 2xl:text-lg text-accent">
               By the time you finish - new walk, you will have established two
               to three tangible next steps to continue on your journey. They
               will look slightly different based off of decisions you make, but
@@ -659,18 +644,16 @@
     </main>
 
     <!-- footer section -->
-    <footer
-      class="pt-10 md:pt-3 text-sm leading-70 px-5 sm:px-20 border-t border-text bg-bg"
-    >
+    <footer class="pt-10 md:pt-20 px-5 sm:px-20 border-t border-accent bg-bg">
       <section
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-center py-5 md:py-10 gap-10"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center py-5 md:py-10 gap-10"
       >
-        <div class="flex flex-col gap-4 sm:col-span-2">
+        <div class="flex flex-col gap-4">
           <div>
             <img
               src="/public/images/chantal-logo-footer.png"
               class="w-[100px] h-[105px] object-cover"
-              alt=""
+              alt="logo"
             />
           </div>
           <div>
@@ -744,138 +727,33 @@
 
         <!--  -->
         <div class="space-y-5">
-          <div>
-            <a
-              href="/vision.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Our Mission</a
-            >
-          </div>
-          <div>
-            <a
-              href="/meet_chantal.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Meet chantal</a
-            >
-          </div>
-          <div>
-            <a
-              href="/prayer_request.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Prayer Request</a
-            >
-          </div>
-          <div>
-            <a
-              href="/beliefs.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Our Belief</a
-            >
-          </div>
-          <div>
-            <a
-              href="/meet_chantal.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Prayer Hub</a
-            >
-          </div>
-        </div>
-        <!--  -->
-        <div class="space-y-5">
+          <h3 class="font-bold text-secondary">Quick Links</h3>
           <div>
             <a
               target="_blank"
               href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
+              class="flex gap-1 items-center text-sm lg:text-base 2xl:text-lg font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Testimonies</a
-            >
-          </div>
-          <div>
-            <a
-              href="/fasting.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Fasting</a
-            >
-          </div>
-          <div>
-            <a
-              href="/conferences.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Conferences</a
+              <span></span>Video Testimonies</a
             >
           </div>
           <div>
             <a
               target="_blank"
-              href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
+              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+              class="flex gap-1 items-center text-sm lg:text-base 2xl:text-lg font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Appointment</a
+              <span></span>Past Live Streams</a
             >
           </div>
-          <div>
-            <a
-              href="/mentor.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Mentorship</a
-            >
-          </div>
-        </div>
-        <!--  -->
-        <div class="space-y-5">
-          <div>
-            <a
-              target="_blank"
-              href="https://launcher.nucleus.church/flow/4e6b81f5136f0513f8af?nucleuslauncher=openflow&amp;nlflow=4e6b81f5136f0513f8af"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Volunteer</a
-            >
-          </div>
-          <div>
-            <a
-              href="/give.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Give</a
-            >
-          </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Small Group</a
-            >
-          </div>
+
           <div>
             <a
               target="_blank"
               href="https://launcher.nucleus.church/flow/46e68052577177659231?nucleuslauncher=openflow&amp;nlflow=46e68052577177659231"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
+              class="flex gap-1 items-center text-sm lg:text-base 2xl:text-lg font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
               <span></span>Partner With Us</a
@@ -885,61 +763,24 @@
             <a
               target="_blank"
               href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&amp;nlflow=4b1f80dfeb60f8bff179"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
+              class="flex gap-1 items-center text-sm lg:text-base 2xl:text-lg font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
               <span></span>Contact Us</a
             >
           </div>
         </div>
-        <!--  -->
-        <div class="space-y-5">
-          <div>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/results?search_query=chantal+ekabe"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Prophetic Prayers</a
-            >
-          </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/results?search_query=chantal+ekabe"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Past Live Streams</a
-            >
-          </div>
-          <div>
-            <a
-              target=""
-              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Video Testimonies</a
-            >
-          </div>
 
-          <div>
-            <a
-              href="/blog.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Mini Guides</a
-            >
-          </div>
+        <div class="space-y-2">
+          <h3>Join us live on youtube</h3>
+          <p>7:20 am MST</p>
+          <p>Monday To Friday</p>
         </div>
       </section>
 
-      <div class="py-5 md:pt-10 border-b border-text"></div>
+      <div class="py-5 md:pt-10 border-b border-accent"></div>
 
-      <p class="text-center text-xs sm:text-sm py-5 md:py-10 text-text">
+      <p class="text-center text-xs sm:text-sm py-5 md:py-10 text-accent">
         Copyright 2023, Chantal-Ekabe. All Rights Reserved.
       </p>
     </footer>

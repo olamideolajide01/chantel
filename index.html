@@ -57,7 +57,7 @@
           <!-- header -->
           <div class="relative">
             <div
-              class="min-h-full w-full isolate overflow-hidden bg-black relative border-b-8 border-white"
+              class="min-h-full w-full isolate overflow-hidden bg-black relative"
             >
               <video class="h-full w-full relative" autoplay muted loop>
                 <source src="/public/videos/herovid.mp4" type="video/mp4" />
@@ -97,253 +97,253 @@
             </div>
 
             <!-- Mobile Navigation bar -->
-
-            <section
-              id="navDrawer"
-              class="md:hidden flex flex-col bg-primary fixed top-0 bottom-0 z-50 w-[250px] rounded-b pt-5 pb-10 h-full shadow"
-            >
-              <div class="flex justify-end">
-                <div
-                  id="closeNav"
-                  class="mr-5 bg-secondary text-white py-2 px-4 hover:bg-white hover:text-secondary rounded-full cursor-pointer"
-                >
-                  x
-                </div>
-              </div>
-
-              <div class="flex justify-center items-center h-full">
-                <div class="space-y-7">
+            <section id="navDrawer" class="hide">
+              <section
+                class="animate__animated animate__fadeInLeft flex flex-col bg-primary fixed top-0 bottom-0 z-50 w-[250px] rounded-b pt-5 pb-10 h-full shadow"
+              >
+                <div class="flex justify-end">
                   <div
-                    class="relative h-full group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex-row items-center justify-center gap-2 text-base rounded-lg;"
+                    id="closeNav"
+                    class="mr-5 bg-secondary text-white py-2 px-4 hover:bg-white hover:text-secondary rounded-full cursor-pointer"
                   >
-                    <span> I'm New </span>
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg border border-transparent border-accent gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary py-3 text-white text-start"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/vision.html"> Mission </a>
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/prayer_request.html"> Prayer Request </a>
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/meet_chantal.html"> Meet Chantal </a>
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/beliefs.html"> Our Beliefs </a>
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/minister_furnace.html">
-                            Minister Furnace
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div
-                    class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center gap-2 text-base rounded-lg;"
-                  >
-                    <span> Next Steps</span>
-
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[220px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary py-3 text-white text-start"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
-                          >
-                            Submit Testimony</a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
-                          >
-                            Schedule Appointment</a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/give.html"> Give</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg"
-                  >
-                    <span> Event </span>
-
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[150px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary py-3 text-white text-start"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/fasting.html"> Fasting</a>
-                        </div>
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/conferences.html"> Conferences</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div @click="closeNav()" class="text-base">
-                    <a href="/mentor.html">Mentorship</a>
-                  </div>
-
-                  <div
-                    class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
-                  >
-                    <span> Watch </span>
-
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary text-white text-start py-3"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
-                          >
-                            Powerful Prophetics</a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
-                          >
-                            Past Live Streams</a
-                          >
-                        </div>
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a href="/index.html"> Video Testimonies</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
-                  >
-                    <span> Engage </span>
-
-                    <div
-                      class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
-                    >
-                      <div
-                        class="rounded-md bg-secondary text-white text-start py-3"
-                      >
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
-                          >
-                            Volunteer</a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
-                          >
-                            Small Groups></a
-                          >
-                        </div>
-
-                        <div
-                          @click="closeNav()"
-                          class="hover:bg-black rounded p-2 text-sm"
-                        >
-                          <a
-                            target="_blank"
-                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
-                          >
-                            Parner With Us</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="text-base">
-                    <a href="/blog.html">Mini Guides</a>
-                  </div>
-                  <div class="text-base">
-                    <a
-                      target="_blank"
-                      href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&amp;nlflow=4b1f80dfeb60f8bff179"
-                      >Contact us</a
-                    >
+                    x
                   </div>
                 </div>
-              </div>
+
+                <div class="flex justify-center items-center h-full">
+                  <div class="space-y-7">
+                    <div
+                      class="relative h-full group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex-row items-center justify-center gap-2 text-base rounded-lg;"
+                    >
+                      <span> I'm New </span>
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg border border-transparent border-accent gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary py-3 text-white text-start"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/vision.html"> Mission </a>
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/prayer_request.html"> Prayer Request </a>
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/meet_chantal.html"> Meet Chantal </a>
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/beliefs.html"> Our Beliefs </a>
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/minister_furnace.html">
+                              Minister Furnace
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div
+                      class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center gap-2 text-base rounded-lg;"
+                    >
+                      <span> Next Steps</span>
+
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[220px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary py-3 text-white text-start"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
+                            >
+                              Submit Testimony</a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
+                            >
+                              Schedule Appointment</a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/give.html"> Give</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg"
+                    >
+                      <span> Event </span>
+
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[150px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary py-3 text-white text-start"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/fasting.html"> Fasting</a>
+                          </div>
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/conferences.html"> Conferences</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div @click="closeNav()" class="text-base">
+                      <a href="/mentor.html">Mentorship</a>
+                    </div>
+
+                    <div
+                      class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
+                    >
+                      <span> Watch </span>
+
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary text-white text-start py-3"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                            >
+                              Powerful Prophetics</a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                            >
+                              Past Live Streams</a
+                            >
+                          </div>
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a href="/index.html"> Video Testimonies</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
+                    >
+                      <span> Engage </span>
+
+                      <div
+                        class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
+                      >
+                        <div
+                          class="rounded-md bg-secondary text-white text-start py-3"
+                        >
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
+                            >
+                              Volunteer</a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
+                            >
+                              Small Groups></a
+                            >
+                          </div>
+
+                          <div
+                            @click="closeNav()"
+                            class="hover:bg-black rounded p-2 text-sm"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
+                            >
+                              Parner With Us</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="text-base">
+                      <a href="/blog.html">Mini Guides</a>
+                    </div>
+                    <div class="text-base">
+                      <a
+                        target="_blank"
+                        href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&amp;nlflow=4b1f80dfeb60f8bff179"
+                        >Contact us</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </section>
             </section>
             <!-- End of Mobile Navigation -->
 
@@ -552,11 +552,40 @@
               </nav>
             </div>
             <!-- Appbar end -->
-            <main>
+
+            <main class="max-w-full md:w-[90%] mx-auto">
+              <!-- welcome section -->
+              <section class="py-20 sm:py-32 px-5">
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mx-auto"
+                >
+                  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div class="mx-auto max-w-2xl">
+                      <h2 class="leading-7 text-secondary">Welcome</h2>
+                      <p
+                        class="my-4 text-3xl font-bold tracking-tight text-text lg:text-5xl"
+                      >
+                        You Matter To God. You Matter to Us
+                      </p>
+                      <p class="mt-6 text-sm md:text-base leading-9">
+                        We are called to eat, drink, speak, think and work to
+                        the glory of God. We worship God by remembering the
+                        gospel through preaching, teaching, singing, praying and
+                        celebrating baptism and communion.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img src="/public/images/float.jpg" alt="float" />
+                  </div>
+                </div>
+              </section>
+
               <!-- Donate -->
-              <section>
+              <!-- <section>
                 <div class="w-full h-[500px] bg-accent">
-                  <div class="l-width flex justify-center items-center h-full">
+                  <div class=" flex justify-center items-center h-full">
                     <div class="text-center space-y-3">
                       <h3
                         class="text-center text-3xl md:text-4xl 2xl:text-6xl font-bold"
@@ -581,8 +610,8 @@
                     </div>
                   </div>
                 </div>
-              </section>
-              <section class="py-24 sm:py-32 l-width">
+              </section> -->
+              <section class="py-20 sm:py-24 px-5">
                 <div class="">
                   <!-- podcasts -->
 
@@ -592,9 +621,12 @@
                     <div class="w-full sm:w-1/2 relative">
                       <img
                         src="/public/images/podcast.png"
-                        class="sm:rounded-l-3xl sm:h-[300px]"
+                        class="rounded-t-3xl sm:rounded-l-3xl sm:h-[300px] w-full"
                         alt=""
                       />
+                      <div
+                        class="absolute inset-0 bg-[#ca8a04] opacity-50 rounded-t-3xl sm:rounded-l-3xl"
+                      ></div>
 
                       <div
                         class="text-center absolute font-medium top-10 left-10 text-3xl md:text-4xl"
@@ -602,7 +634,7 @@
                         Podcast
                       </div>
                       <div
-                        class="absolute bottom-6 sm:bottom-8 left-10 bg-accent text-secondary font-medium px-5 py-3 rounded-3xl"
+                        class="absolute bottom-6 sm:bottom-8 left-10 bg-accent text-secondary font-medium px-7 py-2.5 rounded-3xl"
                       >
                         <button>LISTEN</button>
                       </div>
@@ -618,10 +650,22 @@
                           assists us with funding our conferences, relief
                           /outreach and ministry operating costs
                         </p>
-                        <div
-                          class="bg-secondary inline-block text-primary mt-5 font-medium px-7 py-2.5 rounded-3xl"
-                        >
-                          <button>GIVE</button>
+                        <div class="flex gap-10 mt-5 justify-center">
+                          <div
+                            class="flex items-center gap-2 px-7 py-2.5 rounded-3xl font-medium text-primary bg-secondary"
+                          >
+                            <img src="/public/images/cart.png" alt="" /><button>
+                              SHOP
+                            </button>
+                          </div>
+                          <div
+                            class="flex items-center gap-2 px-7 py-2.5 rounded-3xl font-medium text-primary bg-secondary"
+                          >
+                            <img
+                              src="/public/images/heart.png"
+                              alt=""
+                            /><button>GIVE</button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -637,13 +681,16 @@
                     >
                       <div
                         id="cardd"
-                        class="relative hover:scale-105 transition ease-in-out"
+                        class="relative h-[350px] hover:scale-105 transition ease-in-out"
                       >
                         <img
                           src="public/images/prayer.png"
-                          class="min-h-[400px] z-10 rounded-3xl"
+                          class="h-[350px] z-10 rounded-3xl w-full object-cover"
                           alt=""
                         />
+                        <div
+                          class="absolute inset-0 bg-[#ca8a04] opacity-50 rounded-3xl"
+                        ></div>
 
                         <div
                           class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
@@ -657,7 +704,9 @@
                             Share your burdens to our Prayer wall or Prayer
                             flow</span
                           >
-                          <span id="card2" class="text-secondary hide"
+                          <span
+                            id="card2"
+                            class="text-secondary uppercase pt-4 tracking-wide hide"
                             >Get Started</span
                           >
                         </div>
@@ -671,13 +720,16 @@
                     >
                       <div
                         id="cardd2"
-                        class="relative hover:scale-105 transition ease-in-out"
+                        class="relative h-[350px] hover:scale-105 transition ease-in-out"
                       >
                         <img
-                          src="public/images/testimonies.jpg"
-                          class="min-h-[400px] z-10 rounded-3xl"
+                          src="public/images/testimony.jpg"
+                          class="h-[350px] z-10 rounded-3xl w-full object-cover"
                           alt=""
                         />
+                        <div
+                          class="absolute inset-0 bg-[#ca8a04] opacity-50 rounded-3xl"
+                        ></div>
 
                         <div
                           class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
@@ -693,7 +745,7 @@
                           >
                           <span
                             id="card4"
-                            class="text-secondary uppercase tracking-wide hide"
+                            class="text-secondary uppercase pt-4 tracking-wide hide"
                             >WRITE US!</span
                           >
                         </div>
@@ -707,13 +759,16 @@
                     >
                       <div
                         id="cardd3"
-                        class="relative hover:scale-105 transition ease-in-out"
+                        class="relative h-[350px] hover:scale-105 transition ease-in-out"
                       >
                         <img
                           src="public/images/volunteer.jpg"
-                          class="min-h-[400px] z-10 rounded-3xl"
+                          class="h-[350px] z-10 rounded-3xl w-full object-cover"
                           alt=""
                         />
+                        <div
+                          class="absolute inset-0 bg-[#ca8a04] opacity-50 rounded-3xl"
+                        ></div>
 
                         <div
                           class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
@@ -729,7 +784,7 @@
                           >
                           <span
                             id="card6"
-                            class="text-secondary uppercase tracking-wide hide"
+                            class="text-secondary uppercase pt-4 tracking-wide hide"
                             >LEARN MORE!</span
                           >
                         </div>
@@ -743,16 +798,18 @@
                     >
                       <div
                         id="cardd4"
-                        class="relative hover:scale-105 transition ease-in-out"
+                        class="relative h-[350px] hover:scale-105 transition ease-in-out"
                       >
                         <img
-                          src="public/images/outreach.png"
-                          class="min-h-[400px] z-10 rounded-3xl"
+                          src="public/images/outreach.jpg"
+                          class="h-[350px] z-10 rounded-3xl w-full object-cover"
                           alt=""
                         />
-
                         <div
-                          class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
+                          class="absolute inset-0 bg-[#ca8a04] opacity-50 rounded-3xl"
+                        ></div>
+                        <div
+                          class="text-center absolute font-medium top-24 left-0 right-0 text-3xl px-5"
                         >
                           Relief and Outreach
                         </div>
@@ -762,7 +819,7 @@
                           <p id="card7">we help people in need</p>
                           <p
                             id="card8"
-                            class="text-secondary uppercase tracking-wide hide"
+                            class="text-secondary uppercase pt-4 tracking-wide hide"
                           >
                             GET IN TOUCH!
                           </p>
@@ -777,14 +834,16 @@
                     >
                       <div
                         id="cardd5"
-                        class="relative hover:scale-105 transition ease-in-out"
+                        class="relative h-[350px] hover:scale-105 transition ease-in-out"
                       >
                         <img
                           src="public/images/engage.jpg"
-                          class="min-h-[400px] z-10 rounded-3xl"
+                          class="h-[350px] z-10 rounded-3xl w-full object-cover"
                           alt=""
                         />
-
+                        <div
+                          class="absolute inset-0 bg-[#ca8a04] opacity-50 rounded-3xl"
+                        ></div>
                         <div
                           class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
                         >
@@ -795,11 +854,11 @@
                         >
                           <span id="card9">
                             Partner with us or become a member of our team or
-                            Volunteer! Help us make adiffe rence!</span
+                            Volunteer! Help us make a difference!</span
                           >
                           <span
                             id="card10"
-                            class="text-secondary uppercase tracking-wide hide"
+                            class="text-secondary uppercase pt-4 tracking-wide hide"
                             >SIGN UP!</span
                           >
                         </div>
@@ -813,19 +872,23 @@
                     >
                       <div
                         id="cardd6"
-                        class="relative hover:scale-105 transition ease-in-out"
+                        class="relative h-[350px] hover:scale-105 transition ease-in-out"
                       >
                         <img
                           src="public/images/contact.jpg"
-                          class="min-h-[400px] z-10 rounded-3xl"
+                          class="h-[350px] z-10 rounded-3xl w-full object-cover"
                           alt=""
                         />
+                        <div
+                          class="absolute inset-0 bg-[#ca8a04] opacity-40 rounded-3xl"
+                        ></div>
 
                         <div
                           class="text-center absolute font-medium top-24 left-0 right-0 text-3xl"
                         >
                           Contact Us
                         </div>
+
                         <div
                           class="absolute bottom-4 text-center min-h-[100px] right-0 left-0 hover:hide bg-accent w-full text-xs py-7 px-5"
                         >
@@ -834,7 +897,7 @@
                           >
                           <span
                             id="card12"
-                            class="text-secondary uppercase tracking-wide hide"
+                            class="text-secondary uppercase pt-4 tracking-wide hide"
                             >SIGN UP!</span
                           >
                         </div>
@@ -845,7 +908,7 @@
               </section>
 
               <!-- about us -->
-              <section class="py-10 sm:py-10 l-width">
+              <section class="py-10 sm:py-10 px-5">
                 <section
                   class="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto items-center"
                 >
@@ -884,7 +947,7 @@
                 </section>
               </section>
 
-              <section class="py-20 l-width">
+              <section class="py-20 px-5">
                 <!-- podcasts -->
 
                 <div
@@ -892,11 +955,15 @@
                 >
                   <div class="sm:w-1/2 relative">
                     <img
-                      src="/public/images/calander.jpg"
-                      class="sm:rounded-l-3xl h-[300px]"
+                      src="/public/images/appointment.jpeg"
+                      class="rounded-t-3xl sm:rounded-l-3xl h-[300px] w-full"
                       alt=""
                     />
+                    <div
+                      class="absolute inset-0 bg-[#ca8a04] opacity-60 rounded-t-3xl sm:rounded-l-3xl"
+                    ></div>
                   </div>
+
                   <div class="sm:w-1/2 h-full py-7 sm:py-0">
                     <div class="text-center space-y-5">
                       <h2 class="text-3xl md:text-4xl lg:5xl font-medium">
@@ -912,8 +979,13 @@
                         <a
                           href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
                           target="_blank"
+                          class="flex items-center gap-3"
                         >
-                          <button>BOOK</button></a
+                          <img
+                            src="/public/images/calendar.png"
+                            alt="calender"
+                          />
+                          <button class="font-medium">BOOK</button></a
                         >
                       </div>
                     </div>
@@ -922,11 +994,11 @@
               </section>
 
               <!-- BLOG -->
-              <section>
+              <section class="px-5">
                 <div
                   class="flex flex-col justify-center overflow-hidden py-10 sm:py-20"
                 >
-                  <div class="l-width min-h-28">
+                  <div class="min-h-28">
                     <div class="mx-auto py-4">
                       <h3
                         class="font-bold text-center text-3xl md:text-4xl 2xl:text-6xl"
@@ -943,30 +1015,36 @@
                       <!-- Card 1 -->
 
                       <a
-                        href="/blog2.html"
+                        href="/blog1.html"
                         class="text-secondary font-bold text-xs hover:underline underline-secondary w-full"
                       >
-                        <div class="h-[350px] w-full md:my-12 relative">
+                        <div
+                          class="h-[350px] w-full md:my-12 relative"
+                          id="blogg"
+                        >
                           <img
-                            src="public/images/blog1.png"
-                            class="h-[350px] rounded-3xl"
+                            src="public/images/blog1.jpg"
+                            class="h-[350px] rounded-3xl w-full w-full object-cover"
                             alt=""
                           />
 
                           <div
-                            class="bg-[#101010] bg-opacity-70 hover:bg-opacity-80 absolute rounded-t-3xl bottom-0 w-full z-10"
+                            class="absolute bottom-4 text-center right-0 left-0 bg-accent w-full text-xs px-5 py-7 min-h-[100px]"
                           >
-                            <!-- Card Content -->
-                            <div class="p-4">
-                              <h3 class="font-bold text-white text-lg my-2">
-                                How to walk with God
-                              </h3>
-                              <p class="text-white text-sm">
-                                Walking with God is a personal and spiritual
-                                journey that involves cultivating a close
-                                relationship through prayer...
-                              </p>
-                            </div>
+                            <h3
+                              id="blog1"
+                              class="font-bold text-white text-lg my-2"
+                            >
+                              How to walk with God
+                            </h3>
+                            <p
+                              id="blog2"
+                              class="text-secondary pt-4 tracking-wide hide text-sm"
+                            >
+                              Walking with God is a personal and spiritual
+                              journey that involves cultivating a close
+                              relationship through prayer...
+                            </p>
                           </div>
                         </div></a
                       >
@@ -976,30 +1054,33 @@
                         href="/blog2.html"
                         class="text-secondary font-bold text-xs hover:underline underline-secondary w-full"
                       >
-                        <div class="h-[350px] w-full md:my-12 relative">
+                        <div
+                          class="h-[350px] w-full md:my-12 relative"
+                          id="blogg2"
+                        >
                           <img
                             src="public/images/blog2.png"
-                            class="h-[350px] rounded-3xl"
+                            class="h-[350px] rounded-3xl w-full object-cover"
                             alt=""
                           />
 
                           <div
-                            class="bg-[#101010] bg-opacity-70 hover:bg-opacity-80 absolute rounded-t-3xl bottom-0 w-full z-10"
+                            class="absolute bottom-4 text-center right-0 left-0 bg-accent w-full text-xs px-5 py-7 min-h-[100px]"
                           >
-                            <!-- Card Content -->
-                            <div class="p-4">
-                              <h3 class="font-bold text-white text-lg my-2">
-                                The Tactics of the Enemy
-                              </h3>
-                              <p class="text-white text-sm">
-                                From the beginning of times, the enemy has
-                                looked for ways to destroy the most precious and
-                                valued creation of God, man...
-                              </p>
-                              <!-- <div class="mt-5">
-                             Read More
-                            </div> -->
-                            </div>
+                            <h3
+                              id="blog3"
+                              class="font-bold text-white text-lg my-2"
+                            >
+                              The Tactics of the Enemy
+                            </h3>
+                            <p
+                              id="blog4"
+                              class="text-secondary pt-4 tracking-wide hide text-sm"
+                            >
+                              From the beginning of times, the enemy has looked
+                              for ways to destroy the most precious and valued
+                              creation of God, man...
+                            </p>
                           </div>
                         </div>
                       </a>
@@ -1009,30 +1090,33 @@
                         href="/blog3.html"
                         class="text-secondary font-bold text-xs hover:underline underline-secondary w-full"
                       >
-                        <div class="h-[350px] w-full md:my-12 relative">
+                        <div
+                          class="h-[350px] w-full md:my-12 relative"
+                          id="blogg3"
+                        >
                           <img
                             src="public/images/blog3.png"
-                            class="h-[350px] rounded-3xl"
+                            class="h-[350px] rounded-3xl w-full object-cover"
                             alt=""
                           />
 
                           <div
-                            class="bg-[#101010] bg-opacity-70 hover:bg-opacity-80 absolute rounded-t-3xl bottom-0 w-full z-10"
+                            class="absolute bottom-4 text-center right-0 left-0 bg-accent w-full text-xs px-5 py-7 min-h-[100px]"
                           >
-                            <!-- Card Content -->
-                            <div class="p-4">
-                              <h3 class="font-bold text-white text-lg my-2">
-                                The Tactics of the Enemy II: Division
-                              </h3>
-                              <p class="text-white text-sm">
-                                One of the core messages in the New Testament to
-                                the church is the need for believers to
-                                prioritize unity and treat...
-                              </p>
-                              <!-- <div class="mt-5">
-                             Read More
-                            </div> -->
-                            </div>
+                            <h3
+                              id="blog5"
+                              class="font-bold text-white text-lg my-2"
+                            >
+                              The Tactics of the Enemy II: Division
+                            </h3>
+                            <p
+                              id="blog6"
+                              class="text-secondary pt-4 tracking-wide hide text-sm"
+                            >
+                              One of the core messages in the New Testament to
+                              the church is the need for believers to prioritize
+                              unity and treat...
+                            </p>
                           </div>
                         </div>
                       </a>
@@ -1059,9 +1143,9 @@
     <!-- footer section -->
     <footer class="pt-10 md:pt-20 px-5 sm:px-20 border-t border-accent bg-bg">
       <section
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-center py-5 md:py-10 gap-10"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center py-5 md:py-10 gap-10"
       >
-        <div class="flex flex-col gap-4 sm:col-span-2">
+        <div class="flex flex-col gap-4">
           <div>
             <img
               src="/public/images/chantal-logo-footer.png"
@@ -1140,138 +1224,33 @@
 
         <!--  -->
         <div class="space-y-5">
-          <div>
-            <a
-              href="/vision.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Our Mission</a
-            >
-          </div>
-          <div>
-            <a
-              href="/meet_chantal.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Meet chantal</a
-            >
-          </div>
-          <div>
-            <a
-              href="/prayer_request.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Prayer Request</a
-            >
-          </div>
-          <div>
-            <a
-              href="/beliefs.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Our Belief</a
-            >
-          </div>
-          <div>
-            <a
-              href="/meet_chantal.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Prayer Hub</a
-            >
-          </div>
-        </div>
-        <!--  -->
-        <div class="space-y-5">
+          <h3 class="font-bold text-secondary">Quick Links</h3>
           <div>
             <a
               target="_blank"
               href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
+              class="flex gap-1 items-center text-sm lg:text-base 2xl:text-lg font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Testimonies</a
-            >
-          </div>
-          <div>
-            <a
-              href="/fasting.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Fasting</a
-            >
-          </div>
-          <div>
-            <a
-              href="/conferences.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Conferences</a
+              <span></span>Video Testimonies</a
             >
           </div>
           <div>
             <a
               target="_blank"
-              href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
+              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+              class="flex gap-1 items-center text-sm lg:text-base 2xl:text-lg font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Appointment</a
+              <span></span>Past Live Streams</a
             >
           </div>
-          <div>
-            <a
-              href="/mentor.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Mentorship</a
-            >
-          </div>
-        </div>
-        <!--  -->
-        <div class="space-y-5">
-          <div>
-            <a
-              target="_blank"
-              href="https://launcher.nucleus.church/flow/4e6b81f5136f0513f8af?nucleuslauncher=openflow&amp;nlflow=4e6b81f5136f0513f8af"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Volunteer</a
-            >
-          </div>
-          <div>
-            <a
-              href="/give.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Give</a
-            >
-          </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Small Group</a
-            >
-          </div>
+
           <div>
             <a
               target="_blank"
               href="https://launcher.nucleus.church/flow/46e68052577177659231?nucleuslauncher=openflow&amp;nlflow=46e68052577177659231"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
+              class="flex gap-1 items-center text-sm lg:text-base 2xl:text-lg font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
               <span></span>Partner With Us</a
@@ -1281,55 +1260,18 @@
             <a
               target="_blank"
               href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&amp;nlflow=4b1f80dfeb60f8bff179"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
+              class="flex gap-1 items-center text-sm lg:text-base 2xl:text-lg font-medium hover:text-secondary"
             >
               <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
               <span></span>Contact Us</a
             >
           </div>
         </div>
-        <!--  -->
-        <div class="space-y-5">
-          <div>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/results?search_query=chantal+ekabe"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Prophetic Prayers</a
-            >
-          </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/results?search_query=chantal+ekabe"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Past Live Streams</a
-            >
-          </div>
-          <div>
-            <a
-              target="_blank"
-              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Video Testimonies</a
-            >
-          </div>
 
-          <div>
-            <a
-              href="/blog.html"
-              class="flex gap-1 items-center text-sm lg:text-sm 2xl:text-base font-medium hover:text-secondary"
-            >
-              <p class="bg-secondary h-[5px] w-[5px] rounded-full"></p>
-              <span></span>Mini Guides</a
-            >
-          </div>
+        <div class="space-y-2">
+          <h3>Join us live on youtube</h3>
+          <p>7:20 am MST</p>
+          <p>Monday To Friday</p>
         </div>
       </section>
 
