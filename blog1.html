@@ -58,7 +58,7 @@
             <!-- Mobile Navigation bar -->
             <section id="navDrawer" class="hide">
               <section
-                class="flex flex-col bg-primary fixed top-0 z-50 w-[250px] rounded-b pt-5 pb-10 h-full shadow animate__animated animate__fadeInLeft"
+                class="md:hidden flex flex-col bg-primary fixed top-0 z-50 w-[250px] rounded-b pt-5 pb-10 h-full shadow animate__animated animate__fadeInLeft"
               >
                 <div class="flex justify-end">
                   <div
@@ -74,26 +74,32 @@
                     <div
                       class="relative h-full group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex-row items-center justify-center gap-2 text-base rounded-lg;"
                     >
-                      <span> I'm New </span>
+                      <span class="cursor-pointer hover:text-secondary">
+                        I'm New
+                      </span>
                       <div
                         class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg border border-transparent border-accent gap-2"
                       >
                         <div
                           class="rounded-md bg-secondary py-3 text-white text-start"
                         >
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a href="/vision.html">
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
+                            >
+                              Mission
+                            </div></a
                           >
-                            <a href="/vision.html"> Mission </a>
-                          </div>
 
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a href="/prayer_request.html">
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
+                            >
+                              Prayer Request
+                            </div></a
                           >
-                            <a href="/prayer_request.html"> Prayer Request </a>
-                          </div>
 
                           <div
                             @click="closeNav()"
@@ -102,21 +108,23 @@
                             <a href="/meet_chantal.html"> Meet Chantal </a>
                           </div>
 
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a href="/beliefs.html">
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
+                            >
+                              Our Beliefs
+                            </div></a
                           >
-                            <a href="/beliefs.html"> Our Beliefs </a>
-                          </div>
 
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
-                          >
-                            <a href="/minister_furnace.html">
+                          <a href="/minister_furnace.html"
+                            ><div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
+                            >
                               Minister Furnace
-                            </a>
-                          </div>
+                            </div>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -124,7 +132,9 @@
                     <div
                       class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center gap-2 text-base rounded-lg;"
                     >
-                      <span> Next Steps</span>
+                      <span class="cursor-pointer hover:text-secondary">
+                        Next Steps</span
+                      >
 
                       <div
                         class="absolute shadow-lg z-50 top-[24px] w-[220px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
@@ -132,43 +142,47 @@
                         <div
                           class="rounded-md bg-secondary py-3 text-white text-start"
                         >
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a
+                            target="_blank"
+                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
                           >
-                            <a
-                              target="_blank"
-                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_e6e92c4b9c9a4862acb355751ea82727"
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
                             >
-                              Submit Testimony</a
-                            >
-                          </div>
+                              Submit Testimony
+                            </div></a
+                          >
 
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a
+                            target="_blank"
+                            href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
                           >
-                            <a
-                              target="_blank"
-                              href="https://booking.appointy.com/en-US/chantalekabe/bookings/calendar"
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
                             >
-                              Schedule Appointment</a
-                            >
-                          </div>
+                              Schedule Appointment
+                            </div></a
+                          >
 
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a href="/give.html">
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
+                            >
+                              Give
+                            </div></a
                           >
-                            <a href="/give.html"> Give</a>
-                          </div>
                         </div>
                       </div>
                     </div>
                     <div
                       class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg"
                     >
-                      <span> Event </span>
+                      <span class="cursor-pointer hover:text-secondary">
+                        Event
+                      </span>
 
                       <div
                         class="absolute shadow-lg z-50 top-[24px] w-[150px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
@@ -176,30 +190,40 @@
                         <div
                           class="rounded-md bg-secondary py-3 text-white text-start"
                         >
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a href="/fasting.html"
+                            ><div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
+                            >
+                              Fasting
+                            </div></a
                           >
-                            <a href="/fasting.html"> Fasting</a>
-                          </div>
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a href="/conferences.html"
+                            ><div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
+                            >
+                              Conferences
+                            </div></a
                           >
-                            <a href="/conferences.html"> Conferences</a>
-                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div @click="closeNav()" class="text-base">
-                      <a href="/mentor.html">Mentorship</a>
-                    </div>
+                    <a
+                      class="cursor-pointer hover:text-secondary block"
+                      href="/mentor.html"
+                      ><div @click="closeNav()" class="text-base">
+                        Mentorship
+                      </div></a
+                    >
 
                     <div
                       class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
                     >
-                      <span> Watch </span>
+                      <span class="cursor-pointer hover:text-secondary">
+                        Watch
+                      </span>
 
                       <div
                         class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
@@ -207,35 +231,36 @@
                         <div
                           class="rounded-md bg-secondary text-white text-start py-3"
                         >
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a
+                            target="_blank"
+                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
                           >
-                            <a
-                              target="_blank"
-                              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
                             >
-                              Powerful Prophetics</a
-                            >
-                          </div>
+                              Powerful Prophetics
+                            </div></a
+                          >
 
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
-                          >
-                            <a
-                              target="_blank"
-                              href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                          <a
+                            target="_blank"
+                            href="https://www.youtube.com/results?search_query=chantal+ekabe"
+                            ><div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
                             >
-                              Past Live Streams</a
-                            >
-                          </div>
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                              Past Live Streams
+                            </div></a
                           >
-                            <a href="/index.html"> Video Testimonies</a>
-                          </div>
+                          <a href="/index.html">
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
+                            >
+                              Video Testimonies
+                            </div></a
+                          >
                         </div>
                       </div>
                     </div>
@@ -243,7 +268,9 @@
                     <div
                       class="relative group transition-all duration-200 hover:overflow-visible w-max h-max overflow-hidden flex flex-row items-center justify-center text-base gap-2 rounded-lg;"
                     >
-                      <span> Engage </span>
+                      <span class="cursor-pointer hover:text-secondary">
+                        Engage
+                      </span>
 
                       <div
                         class="absolute shadow-lg z-50 top-[24px] w-[200px] left-0 h-max p-2 bg-transparent rounded-lg flex border border-transparent border-accent flex-col gap-2"
@@ -251,55 +278,59 @@
                         <div
                           class="rounded-md bg-secondary text-white text-start py-3"
                         >
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a
+                            target="_blank"
+                            href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
                           >
-                            <a
-                              target="_blank"
-                              href="https://launcher.nucleus.church/flow/47e0a0536ea78c712113?nucleuslauncher=openflow&amp;nlflow=47e0a0536ea78c712113"
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
                             >
-                              Volunteer</a
-                            >
-                          </div>
+                              Volunteer
+                            </div></a
+                          >
 
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a
+                            target="_blank"
+                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
                           >
-                            <a
-                              target="_blank"
-                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_ac171c5f3f8046e9b9acbc2197de22d8"
+                            <div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
                             >
-                              Small Groups></a
-                            >
-                          </div>
+                              Small Groups>
+                            </div></a
+                          >
 
-                          <div
-                            @click="closeNav()"
-                            class="hover:bg-black rounded p-2 text-sm"
+                          <a
+                            target="_blank"
+                            href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
+                            ><div
+                              @click="closeNav()"
+                              class="hover:bg-black rounded p-2 text-sm"
+                            >
+                              Parner With Us
+                            </div></a
                           >
-                            <a
-                              target="_blank"
-                              href="https://launcher.nucleus.church/launcher/4f6c8b56bda9dab3c8ef?nucleuslauncher=open&amp;nlinfocard=infocard_760e9161663748ee995f6e5b7e1d0f5d"
-                            >
-                              Parner With Us</a
-                            >
-                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="text-base">
-                      <a href="/blog.html">Mini Guides</a>
-                    </div>
-                    <div class="text-base">
-                      <a
-                        target="_blank"
-                        href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&amp;nlflow=4b1f80dfeb60f8bff179"
-                        >Contact us</a
-                      >
-                    </div>
+                    <a
+                      class="cursor-pointer hover:text-secondary block"
+                      href="/blog.html"
+                      ><div @click="closeNav()" class="text-base">
+                        Mini Guides
+                      </div></a
+                    >
+                    <a
+                      class="cursor-pointer hover:text-secondary block"
+                      target="_blank"
+                      href="https://launcher.nucleus.church/flow/4b1f80dfeb60f8bff179?nucleuslauncher=openflow&amp;nlflow=4b1f80dfeb60f8bff179"
+                      ><div @click="closeNav()" class="text-base">
+                        Contact us
+                      </div></a
+                    >
                   </div>
                 </div>
               </section>
